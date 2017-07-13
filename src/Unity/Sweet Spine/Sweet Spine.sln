@@ -1,14 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sweet Spine", "Assembly-CSharp.csproj", "{5F131D4A-CEBB-410F-585F-81A58405A5B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sweet Spine", "Assembly-CSharp-Editor.csproj", "{7BBD3227-3D9A-370B-EC3A-61CB39C764BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-
+		{5F131D4A-CEBB-410F-585F-81A58405A5B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F131D4A-CEBB-410F-585F-81A58405A5B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F131D4A-CEBB-410F-585F-81A58405A5B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F131D4A-CEBB-410F-585F-81A58405A5B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BBD3227-3D9A-370B-EC3A-61CB39C764BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BBD3227-3D9A-370B-EC3A-61CB39C764BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BBD3227-3D9A-370B-EC3A-61CB39C764BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BBD3227-3D9A-370B-EC3A-61CB39C764BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
