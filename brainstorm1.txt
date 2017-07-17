@@ -8,7 +8,7 @@ Subject :
 GAME STYLE
 limitations : VR cardboard + 1 button + 1 movuino
 
-point & click game : keeps the game slow, time to think, inventory (Sherlock Holmes inner palace)
+point & click game : keeps the game slow, time to think, inventory (Sherlock Holmes inner palace?)
 gameplay :
 	- flow of different move (3 or 4) to interact with objects in
 the room (~ a dance)
@@ -19,7 +19,7 @@ The player is rewarded when the move is correct, penalized otherwise.
 What is an environment : same room but not the same configuration
 (in the past / future ? other dimension ?)
 
-Should we implement a tree story instead of having AI ?
+Should we implement a tree story instead of having an AI ?
 Should we have a warm up ? It could be used as a calibration time too. (ex : walking in a forest and avoid branches)
 
 Puzzle idea : 
