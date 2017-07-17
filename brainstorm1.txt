@@ -1,0 +1,35 @@
+Date : 17th July 2017
+Present : Shivam, Gaspard, Pablo, Aymeric, Julien, Mai Line
+Subject : 
+- choose a type of game
+- what are we going to present as a proof of concept
+- define work for everybody
+
+GAME STYLE
+limitations : VR cardboard + 1 button + 1 movuino
+
+point & click game : keeps the game slow, time to think, inventory (Sherlock Holmes inner palace)
+gameplay :
+	- flow of different move (3 or 4) to interact with objects in
+the room (~ a dance)
+	- 1 or 2 moves to change the environment
+
+The player is rewarded when the move is correct, penalized otherwise.
+
+What is an environment : same room but not the same configuration
+(in the past / future ? other dimension ?)
+
+Should we implement a tree story instead of having AI ?
+Should we have a warm up ? It could be used as a calibration time too. (ex : walking in a forest and avoid branches)
+
+Puzzle idea : 
+ - LIFO inventory
+ - enigma
+ - riddles
+
+ PROOF OF CONCEPT
+ - simple story (why the characters, location, quest) with drawings to illustrate (Gaspard)
+ - 1 puzzle to solve -> swap exercice (Julien)
+ - 1 room with 3 environments (Pablo, Aymeric)
+ - 1 or 2 easy move with the movuino (Shivam, Mai Line)
+
