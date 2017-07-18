@@ -2,13 +2,17 @@ Date : 17th July 2017
 Present : Shivam, Gaspard, Pablo, Aymeric, Julien, Mai Line
 Subject : 
 - choose a type of game
-- what are we going to present as a proof of concept
-- define work for everybody
+- Presentation of proof of concept
+- Work Allocation for team members
 
 GAME STYLE
-limitations : VR cardboard + 1 button + 1 movuino
 
-point & click game : keeps the game slow, time to think, inventory (Sherlock Holmes inner palace?)
+Limitations : VR cardboard + 1 button + 1 Movuino
+Point & click game 
+Advantages : 
+- keeps the game slow
+- time to think
+
 gameplay :
 	- flow of different move (3 or 4) to interact with objects in
 the room (~ a dance)
@@ -17,10 +21,10 @@ the room (~ a dance)
 The player is rewarded when the move is correct, penalized otherwise.
 
 What is an environment : same room but not the same configuration
-(in the past / future ? other dimension ?)
+(in the past or future / other dimension ?)
 
 Should we implement a tree story instead of having an AI ?
-Should we have a warm up ? It could be used as a calibration time too. (ex : walking in a forest and avoid branches)
+Should we have a warm up ? Can we produce a simple Hanoi's tower based prototype by 21st July? It could be used as a calibration time too. (ex : walking in a forest and avoid branches)
 
 Puzzle idea : 
  - LIFO inventory
