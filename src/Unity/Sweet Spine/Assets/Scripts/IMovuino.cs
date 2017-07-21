@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IMovuino{
 	bool status { get;} // Online / Offline
-	MoveL mvt { get;} 
+	MoveL movement { get;} 
 }
