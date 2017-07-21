@@ -10,6 +10,8 @@ public class CollideHandler : MonoBehaviour, IWinDetection {
 
 	#endregion
 
+	public GameObject successfulItem;
+
 
 
 	// Use this for initialization
@@ -20,16 +22,19 @@ public class CollideHandler : MonoBehaviour, IWinDetection {
 	void Update () {		
 	}
 
-	void OnTriggerEnter(Collider obj){
-		EndGameDetection scrtPrt = this.transform.parent.GetComponent<EndGameDetection> ();
-
-		if (obj.gameObject.tag == this.tag)
-			IsGood = true;
-		else IsGood = false ;
-		scrtPrt.CheckEndGame ();
-	}
-
-	void OnTriggerExit(Collider obj){
-		IsGood = false;
+	public void OnPointerClick () {
+		if (InventoryUI.Instance.currentItem != null) {
+			EndGameDetection scrtPrt = this.transform.parent.GetComponent<EndGameDetection> ();
+			var currentItem = InventoryUI.Instance.currentItem;
+			if (currentItem.GetItem().tag == this.tag) {
+				currentItem.RemoveItem ();
+				InventoryUI.Instance.currentItem = null;
+				IsGood = true;
+				successfulItem.SetActive (true);
+			}
+			else
+				IsGood = false;
+			scrtPrt.CheckEndGame ();
+		}
 	}
 }

@@ -90,6 +90,7 @@ public class ItemSlotUI : MonoBehaviour
 		inventoryItem.transform.localScale = this.transform.localScale / 2;
 		inventoryItem.transform.position = this.transform.position;
 		inventoryItem.transform.SetParent (this.transform);
+		inventoryItem.gameObject.layer = 0;
 		return res;
 	}
 
@@ -99,10 +100,7 @@ public class ItemSlotUI : MonoBehaviour
 	public InventoryItem RemoveItem()
 	{
 		var res = inventoryItemSlot.Remove ();
-		if (res != null) {
-			res.transform.localScale = res.originalScale;
-			res.transform.SetParent (null);
-		}
+		Destroy (res.gameObject);
 		return res;
 	}
 

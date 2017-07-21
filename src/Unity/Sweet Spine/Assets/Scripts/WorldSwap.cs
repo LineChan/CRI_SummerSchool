@@ -39,7 +39,6 @@ public class WorldSwap : MonoBehaviour {
 				world.secondsMaintained -= Time.deltaTime * 3.0f;
 			}
 			world.secondsMaintained = Mathf.Clamp (world.secondsMaintained, 0, world.world.timeRequirement);
-			Debug.Log (world.secondsMaintained);
 			if (world.secondsMaintained >= world.world.timeRequirement) {
 				world.secondsMaintained = 0.0f;
 				Swap (world.world);
@@ -52,10 +51,7 @@ public class WorldSwap : MonoBehaviour {
 	public void Swap(World world){
 
 		Camera cam = Camera.main;
-
-		if (world.id == 2)
-			cam.GetComponent<PostProcessingBehaviour> ().enabled = true;
-
+		cam.GetComponent<PostProcessingBehaviour> ().enabled = world.id == 2;
 		if (currentWorld != null)
 			cam.cullingMask -= currentWorld.layer;
 		if (world != null)

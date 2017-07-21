@@ -9,9 +9,9 @@ public abstract class InventoryItem : MonoBehaviour{
 	/// </summary>
 	public ItemCore itemCore;
 	/// <summary>
-	/// The index of the original world.
+	/// The original layer.
 	/// </summary>
-	public int originalWorldIndex;
+	public LayerMask originalLayer;
 	/// <summary>
 	/// The original scale of the Inventory Item.
 	/// </summary>
@@ -25,5 +25,6 @@ public abstract class InventoryItem : MonoBehaviour{
 	protected virtual void Init() 
 	{
 		originalScale = this.GetComponent<Transform> ().localScale;
+		originalLayer = this.gameObject.layer;
 	}
 }

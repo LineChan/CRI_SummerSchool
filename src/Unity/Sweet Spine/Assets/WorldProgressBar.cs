@@ -31,7 +31,9 @@ public class WorldProgressBar : MonoBehaviour {
 			this.GetComponent<ProgressBarBehaviour> ().SetFillerSizeAsPercentage (fillAmount);
 			foreach (var image in GetComponentsInChildren<Image>())
 				image.GetComponent<Image> ().color = maxWorld.world.color;
-		} else
+		} else {
 			this.GetComponent<CanvasGroup> ().alpha = 0.0f;
+			this.GetComponent<ProgressBarBehaviour> ().SetFillerSizeAsPercentage (0.0f);
+		}
 	}
 }
