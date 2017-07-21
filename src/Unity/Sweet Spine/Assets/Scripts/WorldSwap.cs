@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PostProcessing;
+using UnityEngine.UI;
 
 public enum MoveL {dog, cat, snake, none};
 
@@ -17,12 +17,14 @@ public class WorldSwap : MonoBehaviour {
 	public List<WorldMoveProgress> worlds;
 	public List<MoveL> movementToWorld;
 	public Time time;
+	public Image vignette;
 
 	// Use this for initialization
 
 	void Start () {
 		currentWorld = worlds [0].world;
 		Swap (worlds [0].world);
+		vignette = GameObject.FindGameObjectWithTag ("Shading").GetComponent<Image>();
 	}
 
 	// Update is called once per frame
@@ -51,7 +53,8 @@ public class WorldSwap : MonoBehaviour {
 	public void Swap(World world){
 
 		Camera cam = Camera.main;
-		cam.GetComponent<PostProcessingBehaviour> ().enabled = world.id == 2;
+		if (world != null && vignette != null)
+			vignette.enabled = world.id == 2;
 		if (currentWorld != null)
 			cam.cullingMask -= currentWorld.layer;
 		if (world != null)
