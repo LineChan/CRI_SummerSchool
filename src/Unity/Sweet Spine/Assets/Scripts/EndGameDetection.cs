@@ -10,7 +10,7 @@ public interface IWinDetection {
 public class EndGameDetection : MonoBehaviour {
 
 
-	private bool _gameEnded;
+	public bool _gameEnded;
 	public bool gameEnded {
 		get{ return _gameEnded;} 
 	}
@@ -35,5 +35,7 @@ public class EndGameDetection : MonoBehaviour {
 				break;
 			}
 		}
+
+	
 	}
 }

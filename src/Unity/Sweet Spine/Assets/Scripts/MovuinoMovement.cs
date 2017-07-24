@@ -9,7 +9,7 @@ namespace Movuino
 		
 		#region IMovuino implementation
 
-		MoveL _movement;
+		public MoveL _movement;
 		public bool status {
 			get {
 				return true;

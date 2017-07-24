@@ -7,12 +7,13 @@ public enum MoveL {dog, cat, snake, none};
 
 public class WorldSwap : MonoBehaviour {
 	[System.Serializable]
-	public class WorldMoveProgress
-	{
+
+	public class WorldMoveProgress{
 		public World world;
 		[HideInInspector]
 		public float secondsMaintained;
 	}
+
 	public World currentWorld;
 	public List<WorldMoveProgress> worlds;
 	public List<MoveL> movementToWorld;
@@ -53,6 +54,9 @@ public class WorldSwap : MonoBehaviour {
 	public void Swap(World world){
 
 		Camera cam = Camera.main;
+
+//		vignette.enabled = false;
+
 		if (world != null && vignette != null)
 			vignette.GetComponent<Animator> ().SetInteger ("World", world.id);
 		if (currentWorld != null)
