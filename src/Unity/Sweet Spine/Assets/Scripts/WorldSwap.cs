@@ -54,9 +54,6 @@ public class WorldSwap : MonoBehaviour {
 	public void Swap(World world){
 
 		Camera cam = Camera.main;
-
-//		vignette.enabled = false;
-
 		if (world != null && vignette != null)
 			vignette.GetComponent<Animator> ().SetInteger ("World", world.id);
 		if (currentWorld != null)
