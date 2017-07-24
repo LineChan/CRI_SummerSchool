@@ -54,7 +54,7 @@ public class WorldSwap : MonoBehaviour {
 
 		Camera cam = Camera.main;
 		if (world != null && vignette != null)
-			vignette.enabled = world.id == 2;
+			vignette.GetComponent<Animator> ().SetInteger ("World", world.id);
 		if (currentWorld != null)
 			cam.cullingMask -= currentWorld.layer;
 		if (world != null)
