@@ -17,215 +17,161 @@ using UnityEngine.EventSystems;
 
 /// Draws a circular reticle in front of any object that the user points at.
 /// The circle dilates if the object is clickable.
-public class GvrReticlePointerImpl : GvrBasePointer
-{
-	public delegate void CursorActionEvent (CursorAction cursorAction, GameObject gameObject);
+public class GvrReticlePointerImpl : GvrBasePointer {
+  // The constants below are expsed for testing.
+  // Minimum inner angle of the reticle (in degrees).
+  public const float RETICLE_MIN_INNER_ANGLE = 0.0f;
+  // Minimum outer angle of the reticle (in degrees).
+  public const float RETICLE_MIN_OUTER_ANGLE = 0.5f;
+  // Angle at which to expand the reticle when intersecting with an object
+  // (in degrees).
+  public const float RETICLE_GROWTH_ANGLE = 1.5f;
 
-	public static event CursorActionEvent onReticlePointerEnter;
-	public static event CursorActionEvent onReticlePointerHover;
-	public static event CursorActionEvent onReticlePointerExit;
+  // Minimum distance of the reticle (in meters).
+  public const float RETICLE_DISTANCE_MIN = 0.45f;
+  // Maximum distance of the reticle (in meters).
+  public const float RETICLE_DISTANCE_MAX = 10.0f;
 
-	public delegate void SimpleActionEvent ();
+  /// Growth speed multiplier for the reticle.
+  public float ReticleGrowthSpeed { private get; set; }
 
-	public static event SimpleActionEvent onReticlePointerClickDown;
-	public static event SimpleActionEvent onReticlePointerClickUp;
-	// The constants below are expsed for testing.
-	// Minimum inner angle of the reticle (in degrees).
-	public const float RETICLE_MIN_INNER_ANGLE = 0.0f;
-	// Minimum outer angle of the reticle (in degrees).
-	public const float RETICLE_MIN_OUTER_ANGLE = 0.5f;
-	// Angle at which to expand the reticle when intersecting with an object
-	// (in degrees).
-	public const float RETICLE_GROWTH_ANGLE = 1.5f;
+  public Material MaterialComp { private get; set; }
 
-	// Minimum distance of the reticle (in meters).
-	public const float RETICLE_DISTANCE_MIN = 0.45f;
-	// Maximum distance of the reticle (in meters).
-	public const float RETICLE_DISTANCE_MAX = 10.0f;
+  // Current inner angle of the reticle (in degrees).
+  // Exposed for testing.
+  public float ReticleInnerAngle { get; private set; }
 
-	/// Growth speed multiplier for the reticle.
-	public float ReticleGrowthSpeed { private get; set; }
+  // Current outer angle of the reticle (in degrees).
+  // Exposed for testing.
+  public float ReticleOuterAngle { get; private set; }
 
-	public Material MaterialComp { private get; set; }
+  // Current distance of the reticle (in meters).
+  // Getter exposed for testing.
+  public float ReticleDistanceInMeters { get; private set; }
 
-	// Current inner angle of the reticle (in degrees).
-	// Exposed for testing.
-	public float ReticleInnerAngle { get; private set; }
+  // Current inner and outer diameters of the reticle, before distance multiplication.
+  // Getters exposed for testing.
+  public float ReticleInnerDiameter { get; private set; }
 
-	// Current outer angle of the reticle (in degrees).
-	// Exposed for testing.
-	public float ReticleOuterAngle { get; private set; }
+  public float ReticleOuterDiameter { get; private set; }
 
-	// Current distance of the reticle (in meters).
-	// Getter exposed for testing.
-	public float ReticleDistanceInMeters { get; private set; }
+  private Vector3 targetPoint = Vector3.zero;
+  public override Vector3 LineEndPoint { get { return targetPoint; } }
 
-	// Current inner and outer diameters of the reticle, before distance multiplication.
-	// Getters exposed for testing.
-	public float ReticleInnerDiameter { get; private set; }
+  public override float MaxPointerDistance { get { return RETICLE_DISTANCE_MAX; } }
 
-	public float ReticleOuterDiameter { get; private set; }
+  public GvrReticlePointerImpl() {
+    ReticleGrowthSpeed = 8.0f;
+    ReticleInnerAngle = 0.0f;
+    ReticleOuterAngle = 0.5f;
+    ReticleDistanceInMeters = 10.0f;
+    ReticleInnerDiameter = 0.0f;
+    ReticleOuterDiameter = 0.0f;
+  }
 
-	private Vector3 targetPoint = Vector3.zero;
+  public override void OnStart () {
+    base.OnStart();
+  }
 
-	public override Vector3 LineEndPoint { get { return targetPoint; } }
+  /// This is called when the 'BaseInputModule' system should be enabled.
+  public override void OnInputModuleEnabled() {}
 
-	public override float MaxPointerDistance { get { return RETICLE_DISTANCE_MAX; } }
+  /// This is called when the 'BaseInputModule' system should be disabled.
+  public override void OnInputModuleDisabled() {}
 
-	public GvrReticlePointerImpl ()
-	{
-		ReticleGrowthSpeed = 8.0f;
-		ReticleInnerAngle = 0.0f;
-		ReticleOuterAngle = 0.5f;
-		ReticleDistanceInMeters = 10.0f;
-		ReticleInnerDiameter = 0.0f;
-		ReticleOuterDiameter = 0.0f;
-	}
+  /// Called when the user is pointing at valid GameObject. This can be a 3D
+  /// or UI element.
+  ///
+  /// The targetObject is the object the user is pointing at.
+  /// The intersectionPosition is where the ray intersected with the targetObject.
+  /// The intersectionRay is the ray that was cast to determine the intersection.
+  public override void OnPointerEnter(RaycastResult rayastResult, Ray ray,
+    bool isInteractive) {
+    SetPointerTarget(rayastResult.worldPosition, isInteractive);
+  }
 
-	public override void OnStart ()
-	{
-		base.OnStart ();
-	}
+  /// Called every frame the user is still pointing at a valid GameObject. This
+  /// can be a 3D or UI element.
+  ///
+  /// The targetObject is the object the user is pointing at.
+  /// The intersectionPosition is where the ray intersected with the targetObject.
+  /// The intersectionRay is the ray that was cast to determine the intersection.
+  public override void OnPointerHover(RaycastResult rayastResult, Ray ray,
+    bool isInteractive) {
+    SetPointerTarget(rayastResult.worldPosition, isInteractive);
+  }
 
-	/// This is called when the 'BaseInputModule' system should be enabled.
-	public override void OnInputModuleEnabled ()
-	{
-	}
+  /// Called when the user's look no longer intersects an object previously
+  /// intersected with a ray projected from the camera.
+  /// This is also called just before **OnInputModuleDisabled** and may have have any of
+  /// the values set as **null**.
+  public override void OnPointerExit(GameObject previousObject) {
+    ReticleDistanceInMeters = RETICLE_DISTANCE_MAX;
+    ReticleInnerAngle = RETICLE_MIN_INNER_ANGLE;
+    ReticleOuterAngle = RETICLE_MIN_OUTER_ANGLE;
+  }
 
-	/// This is called when the 'BaseInputModule' system should be disabled.
-	public override void OnInputModuleDisabled ()
-	{
-	}
+  /// Called when a trigger event is initiated. This is practically when
+  /// the user begins pressing the trigger.
+  public override void OnPointerClickDown() {}
 
-	/// Called when the user is pointing at valid GameObject. This can be a 3D
-	/// or UI element.
-	///
-	/// The targetObject is the object the user is pointing at.
-	/// The intersectionPosition is where the ray intersected with the targetObject.
-	/// The intersectionRay is the ray that was cast to determine the intersection.
-	public override void OnPointerEnter (RaycastResult rayastResult, Ray ray,
-	                                     bool isInteractive)
-	{
-		var go = rayastResult.gameObject;
-		if (onReticlePointerEnter != null) {
-			if (go.GetComponentInChildren<ICursorAction>() != null)
-				onReticlePointerEnter (go.GetComponentInChildren<ICursorAction> ().action, go);
-			else if (go.GetComponentInParent<ICursorAction>() != null)
-				onReticlePointerEnter (go.GetComponentInParent<ICursorAction> ().action, go);
-		}
-		SetPointerTarget (rayastResult.worldPosition, isInteractive);
-	}
+  /// Called when a trigger event is finished. This is practically when
+  /// the user releases the trigger.
+  public override void OnPointerClickUp() {}
 
-	/// Called every frame the user is still pointing at a valid GameObject. This
-	/// can be a 3D or UI element.
-	///
-	/// The targetObject is the object the user is pointing at.
-	/// The intersectionPosition is where the ray intersected with the targetObject.
-	/// The intersectionRay is the ray that was cast to determine the intersection.
-	public override void OnPointerHover (RaycastResult rayastResult, Ray ray,
-	                                     bool isInteractive)
-	{
-		var go = rayastResult.gameObject;
-		if (onReticlePointerHover != null) {
-			if (onReticlePointerEnter != null) {
-				if (go.GetComponentInChildren<ICursorAction>() != null)
-					onReticlePointerHover (go.GetComponentInChildren<ICursorAction> ().action, go);
-				else if (go.GetComponentInParent<ICursorAction>() != null)
-					onReticlePointerHover (go.GetComponentInParent<ICursorAction> ().action, go);
-			}
-		}
-		SetPointerTarget (rayastResult.worldPosition, isInteractive);
-	}
+  public override void GetPointerRadius(out float enterRadius, out float exitRadius) {
+    float min_inner_angle_radians = Mathf.Deg2Rad * RETICLE_MIN_INNER_ANGLE;
+    float max_inner_angle_radians = Mathf.Deg2Rad * (RETICLE_MIN_INNER_ANGLE + RETICLE_GROWTH_ANGLE);
 
-	/// Called when the user's look no longer intersects an object previously
-	/// intersected with a ray projected from the camera.
-	/// This is also called just before **OnInputModuleDisabled** and may have have any of
-	/// the values set as **null**.
-	public override void OnPointerExit (GameObject previousObject)
-	{
-		if (onReticlePointerExit != null) {
-			if (previousObject.GetComponentInChildren<ICursorAction>() != null)
-				onReticlePointerExit (previousObject.GetComponentInChildren<ICursorAction> ().action, previousObject);
-			else if (previousObject.GetComponentInParent<ICursorAction>() != null)
-				onReticlePointerExit (previousObject.GetComponentInParent<ICursorAction> ().action, previousObject);
-		}
-		ReticleDistanceInMeters = RETICLE_DISTANCE_MAX;
-		ReticleInnerAngle = RETICLE_MIN_INNER_ANGLE;
-		ReticleOuterAngle = RETICLE_MIN_OUTER_ANGLE;
-	}
+    enterRadius = 2.0f * Mathf.Tan(min_inner_angle_radians);
+    exitRadius = 2.0f * Mathf.Tan(max_inner_angle_radians);
+  }
 
-	/// Called when a trigger event is initiated. This is practically when
-	/// the user begins pressing the trigger.
-	public override void OnPointerClickDown ()
-	{
-		if (onReticlePointerClickDown != null)
-			onReticlePointerClickDown ();
-	}
+  public void UpdateDiameters() {
+    ReticleDistanceInMeters =
+      Mathf.Clamp(ReticleDistanceInMeters, RETICLE_DISTANCE_MIN, RETICLE_DISTANCE_MAX);
 
-	/// Called when a trigger event is finished. This is practically when
-	/// the user releases the trigger.
-	public override void OnPointerClickUp ()
-	{
-		if (onReticlePointerClickUp != null)
-			onReticlePointerClickUp ();
-	}
+    if (ReticleInnerAngle < RETICLE_MIN_INNER_ANGLE) {
+      ReticleInnerAngle = RETICLE_MIN_INNER_ANGLE;
+    }
 
-	public override void GetPointerRadius (out float enterRadius, out float exitRadius)
-	{
-		float min_inner_angle_radians = Mathf.Deg2Rad * RETICLE_MIN_INNER_ANGLE;
-		float max_inner_angle_radians = Mathf.Deg2Rad * (RETICLE_MIN_INNER_ANGLE + RETICLE_GROWTH_ANGLE);
+    if (ReticleOuterAngle < RETICLE_MIN_OUTER_ANGLE) {
+      ReticleOuterAngle = RETICLE_MIN_OUTER_ANGLE;
+    }
 
-		enterRadius = 2.0f * Mathf.Tan (min_inner_angle_radians);
-		exitRadius = 2.0f * Mathf.Tan (max_inner_angle_radians);
-	}
+    float inner_half_angle_radians = Mathf.Deg2Rad * ReticleInnerAngle * 0.5f;
+    float outer_half_angle_radians = Mathf.Deg2Rad * ReticleOuterAngle * 0.5f;
 
-	public void UpdateDiameters ()
-	{
-		ReticleDistanceInMeters =
-      Mathf.Clamp (ReticleDistanceInMeters, RETICLE_DISTANCE_MIN, RETICLE_DISTANCE_MAX);
+    float inner_diameter = 2.0f * Mathf.Tan(inner_half_angle_radians);
+    float outer_diameter = 2.0f * Mathf.Tan(outer_half_angle_radians);
 
-		if (ReticleInnerAngle < RETICLE_MIN_INNER_ANGLE) {
-			ReticleInnerAngle = RETICLE_MIN_INNER_ANGLE;
-		}
+    ReticleInnerDiameter =
+        Mathf.Lerp(ReticleInnerDiameter, inner_diameter, Time.deltaTime * ReticleGrowthSpeed);
+    ReticleOuterDiameter =
+        Mathf.Lerp(ReticleOuterDiameter, outer_diameter, Time.deltaTime * ReticleGrowthSpeed);
 
-		if (ReticleOuterAngle < RETICLE_MIN_OUTER_ANGLE) {
-			ReticleOuterAngle = RETICLE_MIN_OUTER_ANGLE;
-		}
+    MaterialComp.SetFloat("_InnerDiameter", ReticleInnerDiameter * ReticleDistanceInMeters);
+    MaterialComp.SetFloat("_OuterDiameter", ReticleOuterDiameter * ReticleDistanceInMeters);
+    MaterialComp.SetFloat("_DistanceInMeters", ReticleDistanceInMeters);
+  }
 
-		float inner_half_angle_radians = Mathf.Deg2Rad * ReticleInnerAngle * 0.5f;
-		float outer_half_angle_radians = Mathf.Deg2Rad * ReticleOuterAngle * 0.5f;
+  private bool SetPointerTarget(Vector3 target, bool interactive) {
+    if (base.PointerTransform == null) {
+      Debug.LogWarning("Cannot operate on a null pointer transform");
+      return false;
+    }
+    targetPoint = target;
+    Vector3 targetLocalPosition = base.PointerTransform.InverseTransformPoint(target);
 
-		float inner_diameter = 2.0f * Mathf.Tan (inner_half_angle_radians);
-		float outer_diameter = 2.0f * Mathf.Tan (outer_half_angle_radians);
-
-		ReticleInnerDiameter =
-        Mathf.Lerp (ReticleInnerDiameter, inner_diameter, Time.deltaTime * ReticleGrowthSpeed);
-		ReticleOuterDiameter =
-        Mathf.Lerp (ReticleOuterDiameter, outer_diameter, Time.deltaTime * ReticleGrowthSpeed);
-
-		MaterialComp.SetFloat ("_InnerDiameter", ReticleInnerDiameter * ReticleDistanceInMeters);
-		MaterialComp.SetFloat ("_OuterDiameter", ReticleOuterDiameter * ReticleDistanceInMeters);
-		MaterialComp.SetFloat ("_DistanceInMeters", ReticleDistanceInMeters);
-	}
-
-	private bool SetPointerTarget (Vector3 target, bool interactive)
-	{
-		if (base.PointerTransform == null) {
-			Debug.LogWarning ("Cannot operate on a null pointer transform");
-			return false;
-		}
-		targetPoint = target;
-		Vector3 targetLocalPosition = base.PointerTransform.InverseTransformPoint (target);
-
-		ReticleDistanceInMeters =
-        Mathf.Clamp (targetLocalPosition.z, RETICLE_DISTANCE_MIN, RETICLE_DISTANCE_MAX);
-		if (interactive) {
-			ReticleInnerAngle = RETICLE_MIN_INNER_ANGLE + RETICLE_GROWTH_ANGLE;
-			ReticleOuterAngle = RETICLE_MIN_OUTER_ANGLE + RETICLE_GROWTH_ANGLE;
-		} else {
-			ReticleInnerAngle = RETICLE_MIN_INNER_ANGLE;
-			ReticleOuterAngle = RETICLE_MIN_OUTER_ANGLE;
-		}
-		return true;
-	}
+    ReticleDistanceInMeters =
+        Mathf.Clamp(targetLocalPosition.z, RETICLE_DISTANCE_MIN, RETICLE_DISTANCE_MAX);
+    if (interactive) {
+      ReticleInnerAngle = RETICLE_MIN_INNER_ANGLE + RETICLE_GROWTH_ANGLE;
+      ReticleOuterAngle = RETICLE_MIN_OUTER_ANGLE + RETICLE_GROWTH_ANGLE;
+    } else {
+      ReticleInnerAngle = RETICLE_MIN_INNER_ANGLE;
+      ReticleOuterAngle = RETICLE_MIN_OUTER_ANGLE;
+    }
+    return true;
+  }
 }

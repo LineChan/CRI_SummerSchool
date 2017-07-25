@@ -3,17 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class MovePlayer : MonoBehaviour, ICursorAction {
-	#region ICursorAction implementation
-
-	public CursorAction action {
-		get {
-			return CursorAction.Move;
-		}
-	}
-
-	#endregion
-
+public class MovePlayer : MonoBehaviour {
 	public GameObject player;
 	void Start()
 	{
