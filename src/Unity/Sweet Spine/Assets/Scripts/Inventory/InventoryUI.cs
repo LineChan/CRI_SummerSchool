@@ -118,9 +118,9 @@ public class InventoryUI : MonoBehaviour {
 		for (int i = 0; i < inventorySize; i++) {
 			float slice = 2 * Mathf.PI / inventorySize;
 			float angle = slice * i;
-			float x = Mathf.Cos (angle) * spawnRadius;
-			float z = Mathf.Sin (angle) * spawnRadius;
-			Vector3 position = new Vector3 (x, 0.0f, z);
+			float x = transform.position.x + Mathf.Cos (angle) * spawnRadius;
+			float z = transform.position.z + Mathf.Sin (angle) * spawnRadius;
+			Vector3 position = new Vector3 (x, transform.position.y, z);
 			var go = GameObject.Instantiate (slotPrefab, position, Quaternion.identity);
 			go.transform.SetParent (this.transform);
 			inventoryItemSlots.Add (go);
