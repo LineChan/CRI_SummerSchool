@@ -2,7 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollideHandler : MonoBehaviour, IWinDetection {
+public class CollideHandler : MonoBehaviour, IWinDetection, ICursorAction {
+	#region ICursorAction implementation
+
+	public CursorAction action {
+		get {
+			return CursorAction.PlaceItem;
+		}
+	}
+
+	#endregion
+
 	#region WinDetection implementation
 
 	public bool IsGood { get; set;}
