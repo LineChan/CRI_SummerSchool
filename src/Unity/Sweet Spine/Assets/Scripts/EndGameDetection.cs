@@ -6,23 +6,15 @@ public interface IWinDetection {
 	bool IsGood{ get;}
 }
 
-
+/// <summary>
+/// Detection of the endgame.
+/// </summary>
 public class EndGameDetection : MonoBehaviour {
 
 
 	public bool _gameEnded;
 	public bool gameEnded {
 		get{ return _gameEnded;} 
-	}
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
 	public void CheckEndGame(){

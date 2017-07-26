@@ -64,6 +64,10 @@ static class CursorActionMethods {
 		return res;
 	}
 }
+/// <summary>
+/// Interface for the Actions of the game. Each component that triggers an action for the reticle pointer should implement this interface.
+/// The interface
+/// </summary>
 public interface ICursorAction {
 	CursorAction action { get; }
 }
