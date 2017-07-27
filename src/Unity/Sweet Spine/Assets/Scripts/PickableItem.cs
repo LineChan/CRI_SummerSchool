@@ -8,8 +8,9 @@ public class PickableItem : InventoryItem, ICursorAction {
 			return CursorAction.Pick;
 		}
 	}
+		
 
-	public void Click()
+	public void Pick()
 	{
 		InventoryUI.Instance.AddItem (this);
 	}

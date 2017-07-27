@@ -17,6 +17,8 @@ public abstract class InventoryItem : MonoBehaviour{
 	/// </summary>
 	public Vector3 originalScale { get; private set; }
 
+	public Vector3 inventoryScale;
+
 	void Start()
 	{
 		Init ();

@@ -87,7 +87,9 @@ public class ItemSlotUI : MonoBehaviour
 	public bool Add(InventoryItem inventoryItem)
 	{
 		bool res = inventoryItemSlot.Add (inventoryItem);
-		inventoryItem.transform.localScale = this.transform.localScale / 2;
+
+		inventoryItem.transform.localScale = inventoryItem.inventoryScale; /* TODO : Better Scale*/
+
 		inventoryItem.transform.position = this.transform.position;
 		inventoryItem.transform.SetParent (this.transform);
 		inventoryItem.gameObject.layer = 0;
