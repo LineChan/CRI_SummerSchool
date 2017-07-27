@@ -15,7 +15,7 @@ public class PickableItem : InventoryItem, ICursorAction {
 	/// <summary>
 	/// Called by PointerClick, adds an item to the inventory
 	/// </summary>
-	public void Click()
+	public void Pick()
 	{
 		InventoryUI.Instance.AddItem (this);
 	}

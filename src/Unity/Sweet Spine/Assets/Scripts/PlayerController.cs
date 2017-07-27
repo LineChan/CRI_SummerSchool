@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public enum MoveL {dog, cat, snake, none};
 
-public class WorldSwap : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 	[System.Serializable]
 
 	public class WorldMoveProgress{

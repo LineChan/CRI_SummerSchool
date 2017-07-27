@@ -25,6 +25,7 @@ public class EndGameDetection : MonoBehaviour {
 			if (child.IsGood == false) {
 				_gameEnded = false;
 				break;
+				print ("CHILD NOT OK");
 			}
 		}
 

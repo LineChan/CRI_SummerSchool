@@ -5,19 +5,19 @@ using UnityEngine.UI;
 using ProgressBar;
 
 public class WorldProgressBar : MonoBehaviour {
-	public WorldSwap worldSwap;
+	public PlayerController playerController;
 	// Use this for initialization
 	void Start () {
-		worldSwap = GameObject.FindGameObjectWithTag ("Player").GetComponent<WorldSwap> ();
+		playerController = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerController> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		bool noWorld = true;
 		float maxSecondsMaintained = 0.0f;
-		WorldSwap.WorldMoveProgress maxWorld = null;
+		PlayerController.WorldMoveProgress maxWorld = null;
 
-		foreach (var world in worldSwap.worlds) {
+		foreach (var world in playerController.worlds) {
 			if (world.secondsMaintained > maxSecondsMaintained) {
 				noWorld = false;
 				maxWorld = world;
