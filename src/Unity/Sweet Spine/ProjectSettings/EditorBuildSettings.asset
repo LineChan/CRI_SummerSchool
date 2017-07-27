@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/GoogleVR/Demos/Scenes/GVRDemo.unity
     guid: bb36d2905dc634f1c9eecb35beecaca8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Playground/GazeTest.unity
     guid: 940d7b0cdd181e045b72ddf546dbe386
   - enabled: 0
     path: Assets/USB Serial for Android/Scenes/Android Serial For Unity Example Scene.unity
     guid: ebf1e17e7912a4312a358470d1134315
+  - enabled: 1
+    path: Assets/Scenes/Corridor.unity
+    guid: 88f21765bed88431c9315863f07d6bf1
+  - enabled: 1
+    path: Assets/Scenes/TempleTuto.unity
+    guid: fde2e4c18310dc6458d3a4f0db1dc062
