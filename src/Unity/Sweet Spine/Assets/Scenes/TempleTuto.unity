@@ -3669,7 +3669,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 360, z: 0}
 --- !u!1 &133150853
 GameObject:
@@ -15598,7 +15598,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4372851697011318, guid: 0f3993c8b89d246b496295a7a8d4ed86, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114873647464226854, guid: 0f3993c8b89d246b496295a7a8d4ed86, type: 2}
@@ -36269,7 +36269,7 @@ Light:
     m_Strength: 1
     m_Bias: 0.13
     m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_NearPlane: 0.1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
@@ -36309,7 +36309,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1407858957
 MonoBehaviour:
@@ -43323,53 +43323,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726075066}
   m_Mesh: {fileID: 4300642, guid: 235a5e3d50ad8184c9372a5a9b9d00df, type: 3}
---- !u!1 &1733439806
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1733439808}
-  - component: {fileID: 1733439807}
-  m_Layer: 0
-  m_Name: MovuinoManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1733439807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1733439806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 601085771e7814d28ad87e5c8173fc7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clientData:
-    id: OSCClient
-    port: 7401
-    ipAddress: 192.168.43.140
-  serverData:
-    id: OSCServer
-    port: 7400
---- !u!4 &1733439808
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1733439806}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0955441, y: -0.16924411, z: 1.1118929}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1733992116
 GameObject:
   m_ObjectHideFlags: 0
@@ -48698,7 +48651,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4522650787291594, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114095888130423516, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}

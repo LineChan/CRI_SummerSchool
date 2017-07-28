@@ -31,7 +31,7 @@ namespace Movuino
 		[Tooltip("The server data.")]
 		public ServerData serverData = new ServerData ("OSCServer", 7400);
 
-		void Start()
+		void Awake()
 		{
 			if (_instance != null && _instance != this)
 				Destroy (this.gameObject);
@@ -39,6 +39,7 @@ namespace Movuino
 				DontDestroyOnLoad (this.gameObject);
 				_instance = this;
 				OSCHandler.Instance.Init (serverData, clientData);
+				OSCHandler.Instance.gameObject.transform.SetParent (this.transform);
 			}
 		}
 
