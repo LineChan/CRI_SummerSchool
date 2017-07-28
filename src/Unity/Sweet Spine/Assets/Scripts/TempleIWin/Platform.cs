@@ -2,7 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Platform : MonoBehaviour, IWinDetection {
+public class Platform : MonoBehaviour, IWinDetection, ICursorAction {
+	#region ICursorAction implementation
+
+	public CursorAction action {
+		get {
+			return CursorAction.PlaceItem;
+		}
+	}
+
+	#endregion
+
 	
 	#region IWinDetection implementation
 	private bool _IsGood;
@@ -34,6 +44,7 @@ public class Platform : MonoBehaviour, IWinDetection {
 				InventoryUI.Instance.currentItem = null;
 				_IsGood = true;
 				successfulItem.SetActive (true);
+				this.GetComponentInParent<Animator> ().SetTrigger ("StatuessSolved");
 			}
 			else
 				_IsGood = false;

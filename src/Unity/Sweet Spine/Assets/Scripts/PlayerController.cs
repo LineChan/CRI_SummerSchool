@@ -15,11 +15,15 @@ public class PlayerController : MonoBehaviour {
 		public float secondsMaintained;
 	}
 
+	public delegate void ChangeWorldEvent(World world);
+	public static event ChangeWorldEvent onChangeWorld;
+
 	public World currentWorld;
 	public List<WorldMoveProgress> worlds;
 	public List<MoveL> movementToWorld;
 	public Time time;
 	public Image vignette;
+	bool _meditation = false;
 
 	// Use this for initialization
 
@@ -34,26 +38,24 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		GameObject strtPts;
-
 		Event evt = Event.current;
-		IMovuino mvt = GetComponent<IMovuino>();
 
-		foreach (var world in worlds) {
-			if (world.world != currentWorld && mvt.movement == world.world.movemement) {
-				world.secondsMaintained += Time.deltaTime;
-			}
-			else {
-				world.secondsMaintained -= Time.deltaTime * 3.0f;
-			}
-			world.secondsMaintained = Mathf.Clamp (world.secondsMaintained, 0, world.world.timeRequirement);
-			if (world.secondsMaintained >= world.world.timeRequirement) {
-				world.secondsMaintained = 0.0f;
-				Swap (world.world);
-				break;
+		if (_meditation) {
+			IMovuino mvt = GetComponent<IMovuino> ();
+			foreach (var world in worlds) {
+				if (world.world != currentWorld && mvt.movement == world.world.movemement) {
+					world.secondsMaintained += Time.deltaTime;
+				} else {
+					world.secondsMaintained -= Time.deltaTime * 3.0f;
+				}
+				world.secondsMaintained = Mathf.Clamp (world.secondsMaintained, 0, world.world.timeRequirement);
+				if (world.secondsMaintained >= world.world.timeRequirement) {
+					world.secondsMaintained = 0.0f;
+					Swap (world.world);
+					break;
+				}
 			}
 		}
-			
 	}
 
 
@@ -62,11 +64,21 @@ public class PlayerController : MonoBehaviour {
 		Camera cam = Camera.main;
 		if (world != null && vignette != null)
 			vignette.GetComponent<Animator> ().SetInteger ("World", world.id);
-		if (currentWorld != null)
-			cam.cullingMask -= currentWorld.layer;
-		if (world != null)
-			cam.cullingMask += world.layer;
+		if (world != null && onChangeWorld != null)
+			onChangeWorld (world);
 
 		currentWorld = world;
+	}
+
+	void OnTriggerEnter(Collider collider)
+	{
+		if (collider.gameObject.tag == "Meditation")
+			_meditation = true;
+	}
+
+	void OnTriggerExit(Collider collider)
+	{
+		if (collider.gameObject.tag == "Meditation")
+			_meditation = false;
 	}
 }

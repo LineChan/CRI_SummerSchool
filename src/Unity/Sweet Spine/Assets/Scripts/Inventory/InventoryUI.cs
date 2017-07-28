@@ -24,6 +24,8 @@ public class InventoryUI : MonoBehaviour {
 
 	public ItemSlotUI slotPrefab;
 
+	public Vector3 offset;
+
 	[SerializeField]
 	private ItemSlotUI _currentItem;
 	public ItemSlotUI currentItem {
@@ -134,7 +136,7 @@ public class InventoryUI : MonoBehaviour {
 	}
 
 	void Update(){
-		this.transform.position = player.transform.position;
+		this.transform.position = player.transform.position + offset;
 	}
 
 	void OnEnable(){
