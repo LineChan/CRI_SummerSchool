@@ -9,6 +9,7 @@ TagManager:
   - Shading
   - Fire
   - End
+  - Maya
   layers:
   - Default
   - TransparentFX
