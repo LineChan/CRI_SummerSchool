@@ -36,9 +36,10 @@ namespace Movuino
 			if (_instance != null && _instance != this)
 				Destroy (this.gameObject);
 			else {
+				DontDestroyOnLoad (this.gameObject);
 				_instance = this;
+				OSCHandler.Instance.Init (serverData, clientData);
 			}
-			OSCHandler.Instance.Init (serverData, clientData);
 		}
 
 		public Stack<T> GetLog<T>() where T : MovuinoData, new()
