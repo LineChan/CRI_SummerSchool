@@ -42,7 +42,8 @@ public class FirstCube : MonoBehaviour, IWinDetection, ICursorAction {
 		EndGameDetection scrtPrt = this.GetComponentInParent<EndGameDetection> ();
 
 		if (!_IsGood) {
-			this.GetComponent<Animation> ().Play ();
+			//this.GetComponent<Animation> ().Play ();
+			this.GetComponentInParent<Animator>().SetTrigger("CubeSolved");
 			_IsGood = true;
 			this.GetComponent<Collider> ().enabled = false;
 		}

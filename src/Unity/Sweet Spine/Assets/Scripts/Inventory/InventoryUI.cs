@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InventoryUI : MonoBehaviour {
 
@@ -18,6 +19,8 @@ public class InventoryUI : MonoBehaviour {
 	/// The radius of the inventory
 	/// </summary>
 	public float spawnRadius = 0.5f;
+
+	private GameObject player;
 
 	public ItemSlotUI slotPrefab;
 
@@ -108,8 +111,10 @@ public class InventoryUI : MonoBehaviour {
 	{
 		if (Instance != null && Instance != this)
 			Destroy (this);
-		else
+		else {
 			Instance = this;
+			DontDestroyOnLoad (this.gameObject);
+		}
 	}
 
 	void Start()
@@ -126,5 +131,22 @@ public class InventoryUI : MonoBehaviour {
 			inventoryItemSlots.Add (go);
 			Debug.Log (i);
 		}
+	}
+
+	void Update(){
+		this.transform.position = player.transform.position;
+	}
+
+	void OnEnable(){
+		SceneManager.sceneLoaded += SceneLoaded;
+	}
+
+	void SceneLoaded (Scene arg0, LoadSceneMode arg1)
+	{
+		player = GameObject.FindGameObjectWithTag ("Player");
+	}
+
+	void OnDisable(){
+		SceneManager.sceneLoaded -= SceneLoaded;
 	}
 }

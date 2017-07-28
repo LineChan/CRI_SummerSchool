@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum MoveL {dog, cat, snake, none};
 
@@ -23,14 +24,18 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 
 	void Start () {
+
 		currentWorld = worlds [0].world;
 		Swap (worlds [0].world);
 		vignette = GameObject.FindGameObjectWithTag ("Shading").GetComponent<Image>();
 	}
 
+
 	// Update is called once per frame
 	void Update () {
-		
+
+		GameObject strtPts;
+
 		Event evt = Event.current;
 		IMovuino mvt = GetComponent<IMovuino>();
 
@@ -48,6 +53,7 @@ public class PlayerController : MonoBehaviour {
 				break;
 			}
 		}
+			
 	}
 
 
