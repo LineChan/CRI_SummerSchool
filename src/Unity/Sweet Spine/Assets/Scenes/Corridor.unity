@@ -6956,6 +6956,11 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 114720329860575112, guid: 5b7820eedc74dec49aa26f341542b496,
+        type: 2}
+      propertyPath: bendingTutorial
+      value: 
+      objectReference: {fileID: 1889183946}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
   m_IsPrefabParent: 0
@@ -19636,6 +19641,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4661234655827626, guid: b8c762226c76898478a4ae022968cf44,
     type: 2}
   m_PrefabInternal: {fileID: 1976949873}
+--- !u!111 &1889183946 stripped
+Animation:
+  m_PrefabParentObject: {fileID: 111979546028297388, guid: 5b7820eedc74dec49aa26f341542b496,
+    type: 2}
+  m_PrefabInternal: {fileID: 721688202}
 --- !u!1 &1894456012
 GameObject:
   m_ObjectHideFlags: 0

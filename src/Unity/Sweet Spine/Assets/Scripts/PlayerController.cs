@@ -23,6 +23,8 @@ public class PlayerController : MonoBehaviour {
 	public List<MoveL> movementToWorld;
 	public Time time;
 	public Image vignette;
+	public Animation bendingTutorial;
+	bool _bendingTutorialOnlyOnce;
 	bool _meditation = false;
 
 	// Use this for initialization
@@ -72,13 +74,18 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider)
 	{
-		if (collider.gameObject.tag == "Meditation")
+		if (collider.gameObject.tag == "Meditation") {
 			_meditation = true;
+			if (!_bendingTutorialOnlyOnce)
+				bendingTutorial.Play ();
+			_bendingTutorialOnlyOnce = true;
+		}
 	}
 
 	void OnTriggerExit(Collider collider)
 	{
-		if (collider.gameObject.tag == "Meditation")
+		if (collider.gameObject.tag == "Meditation") {
 			_meditation = false;
+		}
 	}
 }
