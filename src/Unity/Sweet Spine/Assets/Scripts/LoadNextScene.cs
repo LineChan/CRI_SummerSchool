@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class LoadNextScene : MonoBehaviour {
 
+	public string sceneToLoad ;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +17,6 @@ public class LoadNextScene : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		SceneManager.LoadScene ("TempleTuto");
+		SceneManager.LoadScene (sceneToLoad);
 	}
 }

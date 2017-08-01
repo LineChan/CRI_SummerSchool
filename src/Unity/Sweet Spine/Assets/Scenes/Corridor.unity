@@ -11560,6 +11560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a04f96a966ca1384698373040da184d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: TempleTuto
 --- !u!114 &1177738897
 MonoBehaviour:
   m_ObjectHideFlags: 0
