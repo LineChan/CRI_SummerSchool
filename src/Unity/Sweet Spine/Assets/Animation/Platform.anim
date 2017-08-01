@@ -19,12 +19,18 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: 0, y: -1, z: 10.99}
+        value: {x: 0, y: -20.15, z: 10.99}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1
+        value: {x: 0, y: -14.822222, z: 10.99}
+        inSlope: {x: 0, y: 9.133332, z: 0}
+        outSlope: {x: 0, y: 9.133332, z: 0}
+        tangentMode: 0
+      - serializedVersion: 2
+        time: 3
         value: {x: 0, y: 0.4, z: 10.99}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -32,7 +38,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "plaque de me\u0301ditation"
+    path: "plaque de m\xE9ditation"
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -44,7 +50,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 760192420
+      path: 526492710
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -56,7 +62,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1
+    m_StopTime: 3
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -91,7 +97,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: "plaque de me\u0301ditation"
+    path: "plaque de m\xE9ditation"
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -99,12 +105,12 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: -1
+        value: -20.15
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 1
+        time: 3
         value: 0.4
         inSlope: 0
         outSlope: 0
@@ -113,7 +119,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: "plaque de me\u0301ditation"
+    path: "plaque de m\xE9ditation"
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -135,7 +141,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: "plaque de me\u0301ditation"
+    path: "plaque de m\xE9ditation"
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []

@@ -27,6 +27,8 @@ public class FirstCube : MonoBehaviour, IWinDetection, ICursorAction {
 
 	#endregion
 
+	public string triggerName;
+
 	// Use this for initialization
 	void Start () {
 		_IsGood = false;
@@ -43,7 +45,7 @@ public class FirstCube : MonoBehaviour, IWinDetection, ICursorAction {
 
 		if (!_IsGood) {
 			//this.GetComponent<Animation> ().Play ();
-			this.GetComponentInParent<Animator>().SetTrigger("CubeSolved");
+			this.GetComponentInParent<Animator>().SetTrigger(triggerName);
 			_IsGood = true;
 			this.GetComponent<Collider> ().enabled = false;
 		}

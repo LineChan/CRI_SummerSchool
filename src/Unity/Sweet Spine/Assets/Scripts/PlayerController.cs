@@ -69,6 +69,8 @@ public class PlayerController : MonoBehaviour {
 		if (world != null && onChangeWorld != null)
 			onChangeWorld (world);
 
+		cam.cullingMask -= currentWorld.layer;
+		cam.cullingMask += world.layer;
 		currentWorld = world;
 	}
 

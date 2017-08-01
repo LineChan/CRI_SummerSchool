@@ -44,26 +44,26 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: {x: -19.714455, y: -5.3, z: 12.808107}
+        value: {x: -19.714455, y: -6.75, z: 12.808107}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
         time: 1.5
-        value: {x: -19.714455, y: -5.3, z: 12.808107}
+        value: {x: -19.714455, y: -6.75, z: 12.808107}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - serializedVersion: 2
-        time: 2.7
-        value: {x: -19.714455, y: 2.19, z: 12.808107}
+        time: 2.25
+        value: {x: -19.714455, y: 1.84, z: 12.808107}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: "Re\u0301ceptacle statuette ronde"
+    path: "R\xE9ceptacle statuette ronde"
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -82,7 +82,7 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1276515686
+      path: 2194697246
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -94,7 +94,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.7
+    m_StopTime: 2.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -195,7 +195,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: "Re\u0301ceptacle statuette ronde"
+    path: "R\xE9ceptacle statuette ronde"
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -203,13 +203,13 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 2
         time: 1.5
-        value: -5.3
+        value: -6.75
         inSlope: 0
         outSlope: 0
         tangentMode: 136
       - serializedVersion: 2
-        time: 2.7
-        value: 2.19
+        time: 2.25
+        value: 1.84
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -217,7 +217,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: "Re\u0301ceptacle statuette ronde"
+    path: "R\xE9ceptacle statuette ronde"
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -239,7 +239,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: "Re\u0301ceptacle statuette ronde"
+    path: "R\xE9ceptacle statuette ronde"
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
