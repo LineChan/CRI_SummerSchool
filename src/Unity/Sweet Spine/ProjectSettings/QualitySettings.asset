@@ -182,8 +182,8 @@ QualitySettings:
     asyncUploadBufferSize: 4
     resolutionScalingFixedDPIFactor: 1
     excludedTargetPlatforms:
-    - iPhone
     - Android
+    - iPhone
   m_PerPlatformDefaultQuality:
     Android: 2
     Nintendo 3DS: 5
