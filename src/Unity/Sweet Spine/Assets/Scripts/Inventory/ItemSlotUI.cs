@@ -78,6 +78,7 @@ public class ItemSlotUI : MonoBehaviour
 	void Start()
 	{
 		SetColor (ItemSlotColor.Default);
+		GetComponent<Renderer> ().material.mainTextureOffset = new Vector2 (Random.Range (0.0f, 1.0f), Random.Range (0.0f, 1.0f));
 	}
 
 	/// <summary>
@@ -150,11 +151,16 @@ public class ItemSlotUI : MonoBehaviour
 	{
 		switch (color) {
 		case ItemSlotColor.Selected:
-			GetComponent<Renderer>().material.SetColor ("_Color", selectedColor);
+			GetComponent<Renderer>().material.SetColor ("_EmisColor", selectedColor);
 			break;
 		case ItemSlotColor.Default:
-			GetComponent<Renderer> ().material.SetColor ("_Color", defaultColor);
+			GetComponent<Renderer> ().material.SetColor ("_EmisColor", defaultColor);
 			break;
 		}
+	}
+
+	public void Update()
+	{
+		GetComponent<Renderer> ().material.mainTextureOffset = GetComponent<Renderer> ().material.mainTextureOffset + new Vector2(0.001f, 0.002f);
 	}
 }
