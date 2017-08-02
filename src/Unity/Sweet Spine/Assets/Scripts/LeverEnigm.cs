@@ -2,26 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeverEnigm : MonoBehaviour, IWinDetection {
-	
-	#region IWinDetection implementation
-	public bool IsGood {
-		get {
-			return _IsGood;
-		}
-	}
-	#endregion
+public class LeverEnigm : SuccessEventItem {
 
 	public List<bool> soluce;
 	public List<GameObject> levers ;
 	public bool InitState; 
 	public GameObject statue;
 
-	private bool _IsGood;
+	#region implemented abstract members of SuccessEventItem
+	public bool _successful;
+	public override bool successful {
+		get {
+			return _successful;
+		}
+	}
+
+	#endregion
 
 	// Use this for initialization
 	void Start () {
-		_IsGood = InitState ;
+		_successful = InitState ;
 		MajFeedBack ();
 	}
 
@@ -46,17 +46,17 @@ public class LeverEnigm : MonoBehaviour, IWinDetection {
 
 
 	public void CheckEnigmState(){
-		_IsGood = true;
+		_successful = true;
 		for (int i = 0; i < levers.Count; i++) {
 			if (levers [i].GetComponent<SwitchHandler> ().status != soluce [i]) {
-				_IsGood = false;
+				_successful = false;
 				Debug.Log ("Lever Not Ok");
 			}
 		}
 
 		MajFeedBack ();
 
-		if (_IsGood) {
+		if (_successful) {
 			for (int i = 0; i < levers.Count; i++){
 				levers [i].GetComponent<Collider> ().enabled = false;
 			}

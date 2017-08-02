@@ -869,11 +869,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 23311785}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d52ea6784d2e134d9d1b3604994784d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9900f56f7aeff4146a0cc359ad425559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _IsGood: 0
-  triggerName: FinalCube
+  _successful: 0
 --- !u!65 &23311790
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -903,7 +902,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 23311789}
-          m_MethodName: IsOk
+          m_MethodName: OnClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9510,11 +9509,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 342019055}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d52ea6784d2e134d9d1b3604994784d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9900f56f7aeff4146a0cc359ad425559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _IsGood: 0
-  triggerName: CubeSolved
+  _successful: 0
 --- !u!65 &342019061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9544,7 +9542,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 342019060}
-          m_MethodName: IsOk
+          m_MethodName: OnClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -25971,6 +25969,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameEnded: 0
+  itemsToWatch: []
+--- !u!114 &1036685769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1036685765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060077b51f6ca41e38d66f5ad3cacace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEnded: 0
+  itemsToWatch:
+  - {fileID: 1177610465}
+  triggerName: StatuessSolved
+--- !u!114 &1036685770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1036685765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060077b51f6ca41e38d66f5ad3cacace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEnded: 0
+  itemsToWatch:
+  - {fileID: 23311789}
+  triggerName: FinalCube
+--- !u!114 &1036685771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1036685765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060077b51f6ca41e38d66f5ad3cacace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEnded: 0
+  itemsToWatch:
+  - {fileID: 342019060}
+  triggerName: CubeSolved
 --- !u!1 &1045799009
 GameObject:
   m_ObjectHideFlags: 0
@@ -29246,6 +29290,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ac6ae2a4cd90774b920681bb1b5fe01, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1177610465 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114691801932785858, guid: 6ac6ae2a4cd90774b920681bb1b5fe01,
+    type: 2}
+  m_PrefabInternal: {fileID: 1177610464}
+  m_Script: {fileID: 11500000, guid: 53d6ca4e83c81c24eb7f00ade290ccca, type: 3}
 --- !u!1 &1180466154
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollideHandler : SuccessEventItem, ICursorAction {
+public class SimpleClickEvent : SuccessEventItem, ICursorAction {
 	#region ICursorAction implementation
 
 	public CursorAction action {
 		get {
-			return CursorAction.PlaceItem;
+			return CursorAction.Use;
 		}
 	}
 
@@ -30,28 +30,23 @@ public class CollideHandler : SuccessEventItem, ICursorAction {
 
 	#endregion
 
-	public GameObject successfulItem;
-
-
-
 	// Use this for initialization
 	void Start () {
 	}
-
+	
 	// Update is called once per frame
-	void Update () {		
+	void Update () {
+		
 	}
 
-	public void OnPointerClick () {
-		if (InventoryUI.Instance.currentItem != null) {
-			var currentItem = InventoryUI.Instance.currentItem;
-			if (currentItem.GetItem().tag == this.tag) {
-				currentItem.RemoveItem ();
-				InventoryUI.Instance.currentItem = null;
-				successfulItem.SetActive (true);
-				_successful = true;
-				Success ();
-			}
+	public void OnClick(){
+		Debug.Log ("Click");
+		if (!_successful) {
+			Debug.Log ("Click");
+			_successful = true;
+			this.GetComponent<Collider> ().enabled = false;
+			Success ();
 		}
 	}
+		
 }
