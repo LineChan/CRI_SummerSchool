@@ -25,6 +25,7 @@
  * Graphical ressources goes in doc/img
  * Plain Text,Markdown,Latex, source file goes in doc/raw
 
-
+Google Doc of the project
+https://docs.google.com/document/d/1MWVjfJPq188H3nXS3WQb_I_Q_EddOqtWtyibisU9UtI/edit#
 
            
