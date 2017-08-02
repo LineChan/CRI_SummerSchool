@@ -1879,6 +1879,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameEnded: 0
+  itemsToWatch: []
 --- !u!1 &182106564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3884,6 +3885,71 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 360533999}
   m_Mesh: {fileID: 4300610, guid: 520baf9ef538de1409b49e88fa279045, type: 3}
+--- !u!1 &366330012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 366330013}
+  - component: {fileID: 366330014}
+  - component: {fileID: 366330015}
+  m_Layer: 0
+  m_Name: Door
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &366330013
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366330012}
+  m_LocalRotation: {x: -0, y: -0.7071066, z: -0, w: 0.707107}
+  m_LocalPosition: {x: 0.004100002, y: 0.014100001, z: 0.07370001}
+  m_LocalScale: {x: 0.7830041, y: 0.78300416, z: 0.7830041}
+  m_Children:
+  - {fileID: 895063039}
+  m_Father: {fileID: 1856530500}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &366330014
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366330012}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 20572503ae7ea4bb4b46c7b6330a8daf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &366330015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 366330012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 060077b51f6ca41e38d66f5ad3cacace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameEnded: 0
+  itemsToWatch:
+  - {fileID: 1692623261}
+  triggerName: 
+  booleanName: Open
+  booleanValue: 1
 --- !u!1 &370029595
 GameObject:
   m_ObjectHideFlags: 0
@@ -7163,6 +7229,7 @@ MonoBehaviour:
   - {fileID: 800735945}
   InitState: 0
   statue: {fileID: 1667026481654384, guid: 1e85622ed3e193b46a4a9c0f42b86361, type: 2}
+  _successful: 0
 --- !u!1 &673668152
 GameObject:
   m_ObjectHideFlags: 0
@@ -10205,6 +10272,7 @@ GameObject:
   - component: {fileID: 895063039}
   - component: {fileID: 895063041}
   - component: {fileID: 895063040}
+  - component: {fileID: 895063042}
   m_Layer: 0
   m_Name: DoorFirst
   m_TagString: Untagged
@@ -10218,12 +10286,12 @@ Transform:
   m_PrefabParentObject: {fileID: 400414, guid: 520baf9ef538de1409b49e88fa279045, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895063038}
-  m_LocalRotation: {x: -0, y: -0.7071066, z: -0, w: 0.707107}
-  m_LocalPosition: {x: 0.0041, y: 0.0141, z: 0.0737}
-  m_LocalScale: {x: 0.78300405, y: 0.7830041, z: 0.7830041}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1856530500}
-  m_RootOrder: 5
+  m_Father: {fileID: 366330013}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!23 &895063040
 MeshRenderer:
@@ -10266,6 +10334,23 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 895063038}
   m_Mesh: {fileID: 4300068, guid: 520baf9ef538de1409b49e88fa279045, type: 3}
+--- !u!95 &895063042
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 895063038}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &897394857
 GameObject:
   m_ObjectHideFlags: 0
@@ -22178,7 +22263,7 @@ Transform:
   - {fileID: 335965026}
   - {fileID: 289527363}
   - {fileID: 731115222}
-  - {fileID: 895063039}
+  - {fileID: 366330013}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
