@@ -43,18 +43,16 @@ public class Platform : MonoBehaviour, IWinDetection, ICursorAction {
 
 	public void OnPointerClick () {
 		if (InventoryUI.Instance.currentItem != null) {
-			EndGameDetection scrtPrt = this.transform.parent.GetComponent<EndGameDetection> ();
 			var currentItem = InventoryUI.Instance.currentItem;
+			Debug.Log (currentItem.tag);
 			if (currentItem.GetItem().tag == this.tag) {
 				currentItem.RemoveItem ();
 				InventoryUI.Instance.currentItem = null;
 				_IsGood = true;
 				successfulItem.SetActive (true);
-				this.GetComponentInParent<Animator> ().SetTrigger ("StatuessSolved");
 			}
 			else
 				_IsGood = false;
-			scrtPrt.CheckEndGame ();
 		}
 	}
 }
