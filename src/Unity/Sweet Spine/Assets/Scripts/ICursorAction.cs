@@ -8,6 +8,7 @@ public enum CursorAction {
 	Use,
 	Activate,
 	PlaceItem,
+	Custom,
 	None,
 }
 
@@ -57,6 +58,9 @@ static class CursorActionMethods {
 		case CursorAction.PlaceItem:
 			res = "Place item";
 			break;
+		case CursorAction.Custom:
+			res = "";
+			break;
 		default:
 			res = "";
 			break;
@@ -70,4 +74,5 @@ static class CursorActionMethods {
 /// </summary>
 public interface ICursorAction {
 	CursorAction action { get; }
+	string customMessage { get; }
 }

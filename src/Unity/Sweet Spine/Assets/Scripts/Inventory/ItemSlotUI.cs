@@ -2,9 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class ItemSlotUI : MonoBehaviour
+public class ItemSlotUI : MonoBehaviour, ICursorAction
 {
+	#region ICursorAction implementation
+
+	public CursorAction action {
+		get {
+			return CursorAction.Custom;
+		}
+	}
+
+	public string customMessage {
+		get {
+			if (!IsEmpty ())
+				return GetItem ().name;
+			else
+				return "";
+		}
+	}
+
+	#endregion
+
 	public enum ItemSlotColor {
 		Selected,
 		Highlighted,
@@ -94,6 +114,8 @@ public class ItemSlotUI : MonoBehaviour
 		inventoryItem.transform.position = this.transform.position;
 		inventoryItem.transform.SetParent (this.transform);
 		inventoryItem.gameObject.layer = 0;
+
+		inventoryItem.GetComponent<EventTrigger> ().enabled = false;
 		return res;
 	}
 

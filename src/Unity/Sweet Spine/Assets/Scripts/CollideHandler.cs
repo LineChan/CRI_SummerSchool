@@ -11,6 +11,12 @@ public class CollideHandler : MonoBehaviour, IWinDetection, ICursorAction {
 		}
 	}
 
+	public string customMessage {
+		get {
+			return "";
+		}
+	}
+
 	#endregion
 
 	#region WinDetection implementation

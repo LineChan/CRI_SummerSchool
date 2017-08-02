@@ -15,6 +15,12 @@ public class MovePlayer : MonoBehaviour, ICursorAction {
 		}
 	}
 
+	public string customMessage {
+		get {
+			return "";
+		}
+	}
+
 	#endregion
 
 	public GameObject player;

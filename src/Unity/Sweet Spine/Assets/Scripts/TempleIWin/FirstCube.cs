@@ -11,6 +11,12 @@ public class FirstCube : MonoBehaviour, IWinDetection, ICursorAction {
 		}
 	}
 
+	public string customMessage {
+		get {
+			return "";
+		}
+	}
+
 	#endregion
 
 	#region IWinDetection implementatio

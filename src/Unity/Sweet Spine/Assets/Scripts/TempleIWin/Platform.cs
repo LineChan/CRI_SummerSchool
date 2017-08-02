@@ -11,6 +11,12 @@ public class Platform : MonoBehaviour, IWinDetection, ICursorAction {
 		}
 	}
 
+	public string customMessage {
+		get {
+			return "";
+		}
+	}
+
 	#endregion
 
 	

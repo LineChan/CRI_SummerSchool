@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /// <summary>
 /// An item that can be picked by calling the PointerClickEvent on it
@@ -9,6 +10,12 @@ public class PickableItem : InventoryItem, ICursorAction {
 	public CursorAction action {
 		get {
 			return CursorAction.Pick;
+		}
+	}
+
+	public string customMessage {
+		get {
+			return "";
 		}
 	}
 
