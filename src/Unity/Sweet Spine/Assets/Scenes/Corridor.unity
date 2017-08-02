@@ -7005,6 +7005,11 @@ Prefab:
       propertyPath: field of view
       value: 57
       objectReference: {fileID: 0}
+    - target: {fileID: 20984967072192190, guid: 5b7820eedc74dec49aa26f341542b496,
+        type: 2}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
   m_IsPrefabParent: 0
