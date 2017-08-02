@@ -9,6 +9,12 @@ public class SwitchHandler : MonoBehaviour, ICursorAction {
 			return CursorAction.Use;
 		}
 	}
+
+	public string customMessage {
+		get {
+			return "";
+		}
+	}
 	#endregion
 
 	public bool status;
