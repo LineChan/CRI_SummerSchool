@@ -38,8 +38,13 @@ namespace Movuino
 			else {
 				DontDestroyOnLoad (this.gameObject);
 				_instance = this;
-				OSCHandler.Instance.Init (serverData, clientData);
-				OSCHandler.Instance.gameObject.transform.SetParent (this.transform);
+				try {
+					OSCHandler.Instance.Init (serverData, clientData);
+					OSCHandler.Instance.gameObject.transform.SetParent (this.transform);
+				}
+				catch (Exception e) {
+					Debug.LogError (e.Message);
+				}
 			}
 		}
 
