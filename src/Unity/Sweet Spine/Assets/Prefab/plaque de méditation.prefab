@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 114085468286090350}
   - component: {fileID: 114656727803247982}
   m_Layer: 0
-  m_Name: "plaque de m\xE9ditation"
+  m_Name: "plaque de me\u0301ditation"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
