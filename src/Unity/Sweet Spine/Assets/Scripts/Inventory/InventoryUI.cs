@@ -131,7 +131,6 @@ public class InventoryUI : MonoBehaviour {
 			var go = GameObject.Instantiate (slotPrefab, position, Quaternion.identity);
 			go.transform.SetParent (this.transform);
 			inventoryItemSlots.Add (go);
-			Debug.Log (i);
 		}
 	}
 
