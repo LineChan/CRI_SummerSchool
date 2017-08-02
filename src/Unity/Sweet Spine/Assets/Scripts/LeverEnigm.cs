@@ -15,6 +15,7 @@ public class LeverEnigm : MonoBehaviour, IWinDetection {
 	public List<bool> soluce;
 	public List<GameObject> levers ;
 	public bool InitState; 
+	public GameObject statue;
 
 	private bool _IsGood;
 
@@ -51,10 +52,17 @@ public class LeverEnigm : MonoBehaviour, IWinDetection {
 				_IsGood = false;
 				Debug.Log ("Lever Not Ok");
 			}
-				
 		}
 
 		MajFeedBack ();
-		this.GetComponentInParent<EndGameDetection> ().CheckEndGame ();
+
+		if (_IsGood) {
+			for (int i = 0; i < levers.Count; i++){
+				levers [i].GetComponent<Collider> ().enabled = false;
+			}
+
+			Object.Instantiate (statue, new Vector3(11.52f, -1.99f, -17.53f), new Quaternion(0,0,0,0));
+
+		}
 	}
 }
