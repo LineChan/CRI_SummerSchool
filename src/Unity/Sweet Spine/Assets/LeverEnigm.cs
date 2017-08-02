@@ -20,9 +20,29 @@ public class LeverEnigm : MonoBehaviour, IWinDetection {
 
 	// Use this for initialization
 	void Start () {
-		
 		_IsGood = InitState ;
+		MajFeedBack ();
 	}
+
+
+	private void MajFeedBack(){
+		
+		if (levers [0].GetComponent<SwitchHandler> ().status && levers [2].GetComponent<SwitchHandler> ().status)
+			levers [0].GetComponentsInChildren<MeshRenderer> ()[1].material.SetColor ("_Color", Color.green);
+		else
+			levers [0].GetComponentsInChildren<MeshRenderer> ()[1].material.SetColor ("_Color", Color.red);
+			
+		if(!levers [1].GetComponent<SwitchHandler> ().status && levers [2].GetComponent<SwitchHandler> ().status )
+			levers [1].GetComponentsInChildren<MeshRenderer> ()[1].material.SetColor ("_Color", Color.green);
+		else
+			levers [1].GetComponentsInChildren<MeshRenderer> ()[1].material.SetColor ("_Color", Color.red);
+
+		if(!levers [1].GetComponent<SwitchHandler> ().status)
+			levers [2].GetComponentsInChildren<MeshRenderer> ()[1].material.SetColor ("_Color", Color.green);
+		else //boule 3 rouge 
+			levers [2].GetComponentsInChildren<MeshRenderer> ()[1].material.SetColor ("_Color", Color.red);
+		}
+
 
 	public void CheckEnigmState(){
 		_IsGood = true;
@@ -34,6 +54,7 @@ public class LeverEnigm : MonoBehaviour, IWinDetection {
 				
 		}
 
+		MajFeedBack ();
 		this.GetComponentInParent<EndGameDetection> ().CheckEndGame ();
 	}
 }
