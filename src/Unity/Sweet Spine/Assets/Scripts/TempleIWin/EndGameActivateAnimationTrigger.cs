@@ -6,6 +6,7 @@ public class EndGameActivateAnimationTrigger : EndGameDetection {
 	public string triggerName = "";
 	public string booleanName = "";
 	public bool booleanValue = false;
+	public bool playSingleAnimation = false;
 	public override void EndGameAction ()
 	{
 		base.EndGameAction ();
@@ -13,5 +14,7 @@ public class EndGameActivateAnimationTrigger : EndGameDetection {
 			GetComponent<Animator> ().SetTrigger (triggerName);
 		if (booleanName != "")
 			GetComponent<Animator> ().SetBool (booleanName, booleanValue);
+		if (GetComponent<Animation> () != null && playSingleAnimation)
+			GetComponent<Animation> ().Play ();
 	}
 }
