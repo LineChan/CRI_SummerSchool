@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollideHandler : MonoBehaviour, IWinDetection, ICursorAction {
+public class CollideHandler : SuccessEventItem, ICursorAction {
 	#region ICursorAction implementation
 
 	public CursorAction action {
@@ -19,10 +19,14 @@ public class CollideHandler : MonoBehaviour, IWinDetection, ICursorAction {
 
 	#endregion
 
-	#region WinDetection implementation
+	#region implemented abstract members of SuccessEventItem
 
-	public bool IsGood { get; set;}
-
+	public bool _successful;
+	public override bool successful {
+		get {
+			return _successful;
+		}
+	}
 
 	#endregion
 
@@ -40,17 +44,14 @@ public class CollideHandler : MonoBehaviour, IWinDetection, ICursorAction {
 
 	public void OnPointerClick () {
 		if (InventoryUI.Instance.currentItem != null) {
-			EndGameDetection scrtPrt = this.transform.parent.GetComponent<EndGameDetection> ();
 			var currentItem = InventoryUI.Instance.currentItem;
 			if (currentItem.GetItem().tag == this.tag) {
 				currentItem.RemoveItem ();
 				InventoryUI.Instance.currentItem = null;
-				IsGood = true;
 				successfulItem.SetActive (true);
+				_successful = true;
+				Success ();
 			}
-			else
-				IsGood = false;
-			scrtPrt.CheckEndGame ();
 		}
 	}
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Platform : MonoBehaviour, IWinDetection, ICursorAction {
+public class Platform : SuccessEventItem, ICursorAction {
 	#region ICursorAction implementation
 
 	public CursorAction action {
@@ -19,40 +19,30 @@ public class Platform : MonoBehaviour, IWinDetection, ICursorAction {
 
 	#endregion
 
-	
-	#region IWinDetection implementation
-	private bool _IsGood;
-	public bool IsGood {
+	#region implemented abstract members of SuccessEventItem
+
+	bool _success;
+
+	public override bool successful {
 		get {
-			return _IsGood;
+			return _success;
 		}
 	}
+
 	#endregion
 
 	public GameObject successfulItem;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	public void OnPointerClick () {
 		if (InventoryUI.Instance.currentItem != null) {
 			var currentItem = InventoryUI.Instance.currentItem;
-			Debug.Log (currentItem.tag);
 			if (currentItem.GetItem().tag == this.tag) {
 				currentItem.RemoveItem ();
 				InventoryUI.Instance.currentItem = null;
-				_IsGood = true;
+				_success = true;
 				successfulItem.SetActive (true);
+				Success ();
 			}
-			else
-				_IsGood = false;
 		}
 	}
 }
