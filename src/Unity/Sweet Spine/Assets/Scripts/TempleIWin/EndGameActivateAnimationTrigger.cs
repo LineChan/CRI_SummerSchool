@@ -9,7 +9,6 @@ public class EndGameActivateAnimationTrigger : EndGameDetection {
 	public override void EndGameAction ()
 	{
 		base.EndGameAction ();
-		Debug.Log (triggerName);
 		if (triggerName != "")
 			GetComponent<Animator> ().SetTrigger (triggerName);
 		if (booleanName != "")

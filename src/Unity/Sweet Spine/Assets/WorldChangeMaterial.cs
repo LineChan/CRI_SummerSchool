@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WorldChangeMaterial : MonoBehaviour {
 	[System.Serializable]
@@ -9,6 +10,7 @@ public class WorldChangeMaterial : MonoBehaviour {
 		public World world;
 		public Material material;
 		public bool colliderEnabled;
+		public bool navmeshObstacleEnabled;
 	}
 
 	public WorldMaterial[] worldMaterials;
@@ -25,7 +27,10 @@ public class WorldChangeMaterial : MonoBehaviour {
 				if (worldMaterial.world == world) {
 					foreach (var meshRenderer in GetComponentsInChildren<MeshRenderer>())
 						meshRenderer.material = worldMaterial.material;
-					this.GetComponent<Collider> ().enabled = worldMaterial.colliderEnabled;
+					foreach (var collider in GetComponentsInChildren<Collider>())
+						collider.enabled = worldMaterial.colliderEnabled;
+					foreach (var obstacle in GetComponentsInChildren<NavMeshObstacle>())
+						obstacle.enabled = worldMaterial.navmeshObstacleEnabled;
 				}
 			}
 		}

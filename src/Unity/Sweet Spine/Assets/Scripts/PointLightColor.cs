@@ -3,8 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PointLightColor : MonoBehaviour {
-	Color startColor;
-	public Color secondColor;
+	[System.Serializable]
+	public class WorldColor 
+	{
+		public World world;
+		public Color color;
+	}
+
+	public WorldColor[] worldColors;
 
 	void OnEnable()
 	{
@@ -13,24 +19,22 @@ public class PointLightColor : MonoBehaviour {
 
 	void OnChangeWorld (World world)
 	{
-		if (world.id == 2) {
-			Debug.Log ("WorldChanged");
-			StartCoroutine (ChangeColor ());
+		if (worldColors != null) {
+			foreach (var worldColor in worldColors) {
+				if (worldColor.world == world)
+					StartCoroutine (ChangeColor (worldColor.color));
+			}
 		}
 	}
 
-	IEnumerator ChangeColor()
+	IEnumerator ChangeColor(Color color)
 	{
 		while (true) {
-			GetComponent<Light>().color = Color.Lerp (GetComponent<Light> ().color, secondColor, 0.05f);
+			GetComponent<Light>().color = Color.Lerp (GetComponent<Light> ().color, color, 0.05f);
 			yield return null;
-			if (GetComponent<Light> ().color == secondColor)
+			if (GetComponent<Light> ().color == color)
 				break;
 		}
-	}
-	// Use this for initialization
-	void Start () {
-		startColor = GetComponent<Light> ().color;
 	}
 
 	void OnDisable()

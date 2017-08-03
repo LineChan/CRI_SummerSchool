@@ -65,6 +65,7 @@ GameObject:
   - component: {fileID: 114468602945951202}
   - component: {fileID: 45695652433681740}
   - component: {fileID: 114579864023952736}
+  - component: {fileID: 114303633944220504}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -235,8 +236,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1130872870515956}
-  m_LocalRotation: {x: -0, y: 0.7892078, z: -0, w: 0.61412627}
-  m_LocalPosition: {x: -89.88, y: 191.28, z: 154.84}
+  m_LocalRotation: {x: 0.0014991323, y: 0.015981585, z: 0.000024129113, w: -0.99987125}
+  m_LocalPosition: {x: 0.42962298, y: 7.45, z: -20.9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4010955473511580}
@@ -274,14 +275,14 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 150
+  far clip plane: 78.28
   field of view: 57
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 311
+    m_Bits: 4151
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -451,6 +452,30 @@ MonoBehaviour:
   anotherMove:
     min: {x: -0.1, y: 0.1, z: -0.5}
     max: {x: 0.1, y: 0.4, z: -0.3}
+--- !u!114 &114303633944220504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1171324505711336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87e4989c5e703e428df4339d59e2c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blurShader: {fileID: 4800000, guid: 1855d9636fad3914bacc4a543165c974, type: 3}
+  compositeShader: {fileID: 4800000, guid: e384de4389ba527479054baf0ddb1d3e, type: 3}
+  glowRenderShader: {fileID: 4800000, guid: c04b7cae8accdfb4e9c2648823ff39d7, type: 3}
+  glowLayer:
+    serializedVersion: 2
+    m_Bits: 4294965192
+  renderCamera: {fileID: 20984967072192190}
+  glowType: 0
+  glowTint: {r: 1, g: 1, b: 1, a: 0}
+  blurSpread: 0.25
+  blurIterations: 7
+  glowIntensity: 0.55
+  samples: 3
 --- !u!114 &114337366452866274
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -12,9 +12,12 @@ public abstract class SuccessEventItem : MonoBehaviour {
 
 	protected void Success()
 	{
+		Debug.Log (gameObject.name);
 		OnSuccess ();
-		if (onSuccess != null)
+		if (onSuccess != null) {
+			Debug.Log ("eventSent");
 			onSuccess (gameObject);
+		}
 	}
 
 	protected virtual void OnSuccess ()
