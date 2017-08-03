@@ -10,14 +10,14 @@ public abstract class SuccessEventItem : MonoBehaviour {
 		get;
 	}
 
-	public void Success()
+	protected void Success()
 	{
 		OnSuccess ();
 		if (onSuccess != null)
 			onSuccess (gameObject);
 	}
 
-	public virtual void OnSuccess ()
+	protected virtual void OnSuccess ()
 	{
 	}
 }

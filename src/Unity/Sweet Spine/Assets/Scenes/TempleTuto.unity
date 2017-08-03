@@ -780,7 +780,8 @@ GameObject:
   - component: {fileID: 23311789}
   - component: {fileID: 23311790}
   - component: {fileID: 23311791}
-  m_Layer: 9
+  - component: {fileID: 23311792}
+  m_Layer: 0
   m_Name: Cube11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -834,7 +835,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -915,6 +916,24 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &23311792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23311785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e437184762049bfa3a107c28ebe83c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  worldMaterials:
+  - world: {fileID: 11400000, guid: ca10b5b53049843aea58410e3c7b340e, type: 2}
+    material: {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
+    colliderEnabled: 0
+  - world: {fileID: 11400000, guid: 0307de464ce3546258b1302f3a87ce54, type: 2}
+    material: {fileID: 2100000, guid: d9ce06d71dcb1469abb13b8fc8ac2fa2, type: 2}
+    colliderEnabled: 1
 --- !u!1 &25826798
 GameObject:
   m_ObjectHideFlags: 0
@@ -4377,7 +4396,7 @@ GameObject:
   - component: {fileID: 156668119}
   - component: {fileID: 156668121}
   - component: {fileID: 156668120}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube365
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4411,7 +4430,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4922,7 +4941,7 @@ GameObject:
   - component: {fileID: 184815882}
   - component: {fileID: 184815884}
   - component: {fileID: 184815883}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube362
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4956,7 +4975,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6238,7 +6257,7 @@ GameObject:
   - component: {fileID: 231248705}
   - component: {fileID: 231248707}
   - component: {fileID: 231248706}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube372
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6272,7 +6291,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8352,7 +8371,7 @@ GameObject:
   - component: {fileID: 308651383}
   - component: {fileID: 308651385}
   - component: {fileID: 308651384}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube357
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8386,7 +8405,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8707,7 +8726,7 @@ GameObject:
   - component: {fileID: 317469695}
   - component: {fileID: 317469697}
   - component: {fileID: 317469696}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube367
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8741,7 +8760,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10162,7 +10181,7 @@ GameObject:
   - component: {fileID: 376967859}
   - component: {fileID: 376967861}
   - component: {fileID: 376967860}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube369
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10196,7 +10215,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17626,7 +17645,7 @@ GameObject:
   - component: {fileID: 726280156}
   - component: {fileID: 726280158}
   - component: {fileID: 726280157}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube356
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17660,7 +17679,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19995,7 +20014,7 @@ GameObject:
   - component: {fileID: 811679464}
   - component: {fileID: 811679466}
   - component: {fileID: 811679465}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube360
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20029,7 +20048,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22699,7 +22718,7 @@ GameObject:
   - component: {fileID: 921301152}
   - component: {fileID: 921301154}
   - component: {fileID: 921301153}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube361
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22733,7 +22752,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -23832,7 +23851,7 @@ GameObject:
   - component: {fileID: 962499480}
   - component: {fileID: 962499482}
   - component: {fileID: 962499481}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube371
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23866,7 +23885,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25301,7 +25320,7 @@ GameObject:
   - component: {fileID: 1006200786}
   - component: {fileID: 1006200788}
   - component: {fileID: 1006200787}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube363
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25335,7 +25354,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -25985,6 +26004,8 @@ MonoBehaviour:
   itemsToWatch:
   - {fileID: 1177610465}
   triggerName: StatuessSolved
+  booleanName: 
+  booleanValue: 0
 --- !u!114 &1036685770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26000,6 +26021,8 @@ MonoBehaviour:
   itemsToWatch:
   - {fileID: 23311789}
   triggerName: FinalCube
+  booleanName: 
+  booleanValue: 0
 --- !u!114 &1036685771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26015,6 +26038,8 @@ MonoBehaviour:
   itemsToWatch:
   - {fileID: 342019060}
   triggerName: CubeSolved
+  booleanName: 
+  booleanValue: 0
 --- !u!1 &1045799009
 GameObject:
   m_ObjectHideFlags: 0
@@ -26167,7 +26192,7 @@ GameObject:
   - component: {fileID: 1049819417}
   - component: {fileID: 1049819419}
   - component: {fileID: 1049819418}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube354
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26201,7 +26226,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -27370,7 +27395,7 @@ GameObject:
   - component: {fileID: 1087766742}
   - component: {fileID: 1087766744}
   - component: {fileID: 1087766743}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube359
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27404,7 +27429,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29116,7 +29141,7 @@ GameObject:
   - component: {fileID: 1170276770}
   - component: {fileID: 1170276772}
   - component: {fileID: 1170276771}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube370
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29150,7 +29175,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -30908,7 +30933,7 @@ GameObject:
   - component: {fileID: 1224330996}
   - component: {fileID: 1224330998}
   - component: {fileID: 1224330997}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube364
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30942,7 +30967,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35287,7 +35312,7 @@ GameObject:
   - component: {fileID: 1390420315}
   - component: {fileID: 1390420317}
   - component: {fileID: 1390420316}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube373
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35321,7 +35346,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -38660,7 +38685,7 @@ GameObject:
   - component: {fileID: 1542085328}
   - component: {fileID: 1542085330}
   - component: {fileID: 1542085329}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube355
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38694,7 +38719,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39623,7 +39648,7 @@ GameObject:
   - component: {fileID: 1600377263}
   - component: {fileID: 1600377265}
   - component: {fileID: 1600377264}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube368
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39657,7 +39682,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -39765,7 +39790,7 @@ GameObject:
   - component: {fileID: 1601041420}
   - component: {fileID: 1601041422}
   - component: {fileID: 1601041421}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube366
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39799,7 +39824,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -44974,7 +44999,7 @@ GameObject:
   - component: {fileID: 1811008928}
   - component: {fileID: 1811008930}
   - component: {fileID: 1811008929}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: pCube358
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45008,7 +45033,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 14a457736764d7743804b60218d2753f, type: 2}
+  - {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -48614,10 +48639,49 @@ Prefab:
       propertyPath: far clip plane
       value: 78.28
       objectReference: {fileID: 0}
+    - target: {fileID: 114579864023952736, guid: 5b7820eedc74dec49aa26f341542b496,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114095888130423516, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
   m_IsPrefabParent: 0
+--- !u!20 &1967708862 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20984967072192190, guid: 5b7820eedc74dec49aa26f341542b496,
+    type: 2}
+  m_PrefabInternal: {fileID: 1967708861}
+--- !u!1 &1967708863 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1171324505711336, guid: 5b7820eedc74dec49aa26f341542b496,
+    type: 2}
+  m_PrefabInternal: {fileID: 1967708861}
+--- !u!114 &1967708864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1967708863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87e4989c5e703e428df4339d59e2c72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blurShader: {fileID: 4800000, guid: 1855d9636fad3914bacc4a543165c974, type: 3}
+  compositeShader: {fileID: 4800000, guid: e384de4389ba527479054baf0ddb1d3e, type: 3}
+  glowRenderShader: {fileID: 4800000, guid: c04b7cae8accdfb4e9c2648823ff39d7, type: 3}
+  glowLayer:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  renderCamera: {fileID: 1967708862}
+  glowType: 0
+  glowTint: {r: 1, g: 1, b: 1, a: 0}
+  blurSpread: 0.25
+  blurIterations: 7
+  glowIntensity: 0.55
+  samples: 3
 --- !u!1 &1971102077
 GameObject:
   m_ObjectHideFlags: 0

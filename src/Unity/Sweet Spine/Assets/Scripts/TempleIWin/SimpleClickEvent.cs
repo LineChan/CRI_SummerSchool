@@ -40,9 +40,7 @@ public class SimpleClickEvent : SuccessEventItem, ICursorAction {
 	}
 
 	public void OnClick(){
-		Debug.Log ("Click");
 		if (!_successful) {
-			Debug.Log ("Click");
 			_successful = true;
 			this.GetComponent<Collider> ().enabled = false;
 			Success ();
