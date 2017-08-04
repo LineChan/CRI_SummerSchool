@@ -17,5 +17,5 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 256
-  movemement: 0
+  movemement: 1
   color: {r: 0, g: 0.08965492, b: 1, a: 1}

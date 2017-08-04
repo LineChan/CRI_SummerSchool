@@ -88,6 +88,9 @@ public class PlayerController : MonoBehaviour {
 	{
 		if (collider.gameObject.tag == "Meditation") {
 			_meditation = false;
+			foreach (var world in worlds) {
+				world.secondsMaintained = 0;
+			}
 		}
 	}
 }

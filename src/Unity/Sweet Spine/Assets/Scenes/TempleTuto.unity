@@ -931,9 +931,11 @@ MonoBehaviour:
   - world: {fileID: 11400000, guid: ca10b5b53049843aea58410e3c7b340e, type: 2}
     material: {fileID: 2100000, guid: e315724906d3b47aaa09d95931479bd1, type: 2}
     colliderEnabled: 0
+    navmeshObstacleEnabled: 0
   - world: {fileID: 11400000, guid: 0307de464ce3546258b1302f3a87ce54, type: 2}
     material: {fileID: 2100000, guid: d9ce06d71dcb1469abb13b8fc8ac2fa2, type: 2}
     colliderEnabled: 1
+    navmeshObstacleEnabled: 0
 --- !u!1 &25826798
 GameObject:
   m_ObjectHideFlags: 0
@@ -26006,6 +26008,7 @@ MonoBehaviour:
   triggerName: StatuessSolved
   booleanName: 
   booleanValue: 0
+  playSingleAnimation: 0
 --- !u!114 &1036685770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26023,6 +26026,7 @@ MonoBehaviour:
   triggerName: FinalCube
   booleanName: 
   booleanValue: 0
+  playSingleAnimation: 0
 --- !u!114 &1036685771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26040,6 +26044,7 @@ MonoBehaviour:
   triggerName: CubeSolved
   booleanName: 
   booleanValue: 0
+  playSingleAnimation: 0
 --- !u!1 &1045799009
 GameObject:
   m_ObjectHideFlags: 0
@@ -48633,6 +48638,11 @@ Prefab:
     - target: {fileID: 4522650787291594, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225407959150702, guid: 5b7820eedc74dec49aa26f341542b496,
+        type: 2}
+      propertyPath: _movement
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
