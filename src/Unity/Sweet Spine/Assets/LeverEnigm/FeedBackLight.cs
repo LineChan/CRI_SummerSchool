@@ -76,7 +76,7 @@ public class FeedBackLight : MonoBehaviour {
 		status = stackState;
 
 		if (oldStatus != status && animatorTriggerName != null) {
-			this.GetComponent<Animator> ().SetBool (status);
+			this.GetComponent<Animator> ().SetBool (animatorTriggerName, status);
 		}
 	}
 

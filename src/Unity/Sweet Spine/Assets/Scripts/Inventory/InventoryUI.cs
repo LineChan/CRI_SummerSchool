@@ -46,7 +46,11 @@ public class InventoryUI : MonoBehaviour {
 	{
 		for (int i = 0; i < this.inventoryItemSlots.Count; i++) {
 			if (this.inventoryItemSlots [i].IsEmpty () || this.inventoryItemSlots [i].Has (newItem)) {
-				return this.inventoryItemSlots [i].Add (newItem);
+				var res = this.inventoryItemSlots [i].Add (newItem);
+				if (res) {
+					this.inventoryItemSlots [i].SelectItem ();
+				}
+				return res;
 			}
 		}
 		return false;

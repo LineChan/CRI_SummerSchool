@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldName: World1
   id: 1
-  timeRequirement: 30
+  timeRequirement: 15
   layer:
     serializedVersion: 2
     m_Bits: 256

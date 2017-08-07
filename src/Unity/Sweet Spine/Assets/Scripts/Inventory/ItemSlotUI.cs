@@ -162,6 +162,14 @@ public class ItemSlotUI : MonoBehaviour, ICursorAction
 	/// </summary>
 	public void OnClick()
 	{
+		SelectItem ();
+	}
+
+	/// <summary>
+	/// Selects the item as the current item
+	/// </summary>
+	public void SelectItem()
+	{
 		if (this == InventoryUI.Instance.currentItem)
 			InventoryUI.Instance.currentItem = null;
 		else if (!IsEmpty ())
@@ -169,6 +177,7 @@ public class ItemSlotUI : MonoBehaviour, ICursorAction
 		else
 			InventoryUI.Instance.currentItem = null;
 	}
+
 	public void SetColor(ItemSlotColor color)
 	{
 		switch (color) {
