@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: ebf1e17e7912a4312a358470d1134315
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Corridor.unity
     guid: 88f21765bed88431c9315863f07d6bf1
   - enabled: 1

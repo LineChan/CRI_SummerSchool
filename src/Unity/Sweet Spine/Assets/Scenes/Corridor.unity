@@ -1866,6 +1866,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114225407959150702, guid: 5b7820eedc74dec49aa26f341542b496,
+        type: 2}
+      propertyPath: anotherMove.min.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225407959150702, guid: 5b7820eedc74dec49aa26f341542b496,
+        type: 2}
+      propertyPath: anotherMove.max.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225407959150702, guid: 5b7820eedc74dec49aa26f341542b496,
+        type: 2}
+      propertyPath: anotherMove.min.z
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225407959150702, guid: 5b7820eedc74dec49aa26f341542b496,
+        type: 2}
+      propertyPath: anotherMove.max.z
+      value: -0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114579864023952736, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5b7820eedc74dec49aa26f341542b496, type: 2}
