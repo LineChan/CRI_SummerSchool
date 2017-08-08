@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 /*
  * Grammar for soluce :
- * int >0 take value onto stack
+ * int >=0 take value onto stack
  * -1 logical Not the next value 
  * -2 And with next value
  * -3 Or with next value
@@ -61,6 +61,8 @@ public class FeedBackLight : MonoBehaviour {
 					stackState = stackState && tmp;
 					
 				} else if (op == 0) { // Stack init
+					Debug.Log("Light :"+cursor+":"+soluce[cursor]);
+
 					tmp = enigm.levers [soluce [cursor]].status;
 					if (NotVal)
 						tmp = !tmp;
@@ -75,8 +77,11 @@ public class FeedBackLight : MonoBehaviour {
 
 		status = stackState;
 
+		Debug.Log ("Light : "+oldStatus+":"+status+" TrigerName : "+animatorTriggerName);
+
 		if (oldStatus != status && animatorTriggerName != null) {
-			this.GetComponent<Animator> ().SetBool (animatorTriggerName, status);
+			Debug.Log ("Light : Toggle");
+			this.GetComponent<Animator> ().SetBool(animatorTriggerName, status);
 		}
 	}
 

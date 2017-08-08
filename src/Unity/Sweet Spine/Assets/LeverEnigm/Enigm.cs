@@ -22,7 +22,7 @@ public class Enigm : MonoBehaviour {
 
 		if (target.Count != nbLevers) //If we don't have enought lever to reach the target
 			Debug.LogError ("Enigm imposible to solve !");
-		
+		CheckTarget ();
 	}
 
 	public void CheckTarget(){

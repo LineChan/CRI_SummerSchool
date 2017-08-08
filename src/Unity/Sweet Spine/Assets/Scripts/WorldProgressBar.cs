@@ -27,7 +27,7 @@ public class WorldProgressBar : MonoBehaviour {
 		if (!noWorld) {
 			this.GetComponent<CanvasGroup> ().alpha = 1.0f;
 			float fillAmount = (maxWorld.secondsMaintained / maxWorld.world.timeRequirement) * 100.0f;
-			Debug.Log (fillAmount);
+		//	Debug.Log ("Progress Bar : "+fillAmount);
 			this.GetComponent<ProgressBarBehaviour> ().SetFillerSizeAsPercentage (fillAmount);
 			foreach (var image in GetComponentsInChildren<Image>())
 				image.GetComponent<Image> ().color = maxWorld.world.color;
