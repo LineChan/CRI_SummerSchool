@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class MoveDropdownUI : MonoBehaviour {
 	Dropdown _dropdown;
 	public CalibrateManager calibrateManager;
+	public MovuinoSensorUI movuinoSensorUI;
 
 	public void Start()
 	{
@@ -19,12 +20,23 @@ public class MoveDropdownUI : MonoBehaviour {
 			OnValueChanged(_dropdown);
 		});
 		_dropdown.captionText.text = _dropdown.options [0].text;
-		OnValueChanged (_dropdown);
+		UpdateValue (_dropdown);
+	}
+
+	public void UpdateValue(Dropdown target)
+	{
+		int index = 0;
+		for (int i = 0; i < MoveManager.Instance.moveList.moves.Count; i++) {
+			if (MoveManager.Instance.moveList.moves [i].name == target.options [target.value].text)
+				index = i;
+		}
+		calibrateManager.currentMoveIndex = index;
+		movuinoSensorUI.values = calibrateManager.currentMove.values;
+		Debug.Log (movuinoSensorUI.values);
 	}
 
 	void OnValueChanged(Dropdown target)
 	{
-		var move = MoveManager.Instance.moveList.moves.Find (x => x.name == target.options [target.value].text);
-		calibrateManager.currentMove = move;
+		UpdateValue (target);
 	}
 }

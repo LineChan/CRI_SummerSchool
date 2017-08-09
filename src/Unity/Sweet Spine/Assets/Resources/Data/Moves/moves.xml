@@ -12,18 +12,28 @@
         <y>0.3</y>
         <z>0.25</z>
       </upperRange>
+      <values>
+        <x>0.08</x>
+        <y>0.48</y>
+        <z>0.09</z>
+      </values>
     </Move>
     <Move name="Bending">
       <lowerRange>
-        <x>-0.0551</x>
-        <y>-0.0551</y>
-        <z>-0.0551</z>
+        <x>-0.0101050008</x>
+        <y>0.45601505</y>
+        <z>-0.036065</z>
       </lowerRange>
       <upperRange>
-        <x>0.0551</x>
-        <y>0.0551</y>
-        <z>0.0551</z>
+        <x>0.064345</x>
+        <y>0.530465066</y>
+        <z>0.038385</z>
       </upperRange>
+      <values>
+        <x>0.02712</x>
+        <y>0.493240058</y>
+        <z>0.00116</z>
+      </values>
     </Move>
   </Moves>
 </MoveCollection>

@@ -12,10 +12,21 @@ public class MovuinoSensorUI : MonoBehaviour {
 		Gyroscope,
 		Magnetometer,
 	}
-	public Vector3 values;
-	public Text xText;
-	public Text yText;
-	public Text zText;
+	public Vector3 _values;
+	public Vector3 values { 
+		get {
+			return _values;
+		}
+		set{
+			_values = value;
+			SetTextValues ();
+		} }
+	public InputField xField;
+	public InputField yField;
+	public InputField zField;
+	public Text noMovuinoDataText;
+	public CanvasGroup dataCanvasGroup;
+	public bool readData = false;
 	public MovuinoSensorUIType sensorType;
 
 	Vector3 GetSensorValue(MovuinoSensorUIType sensorType, MovuinoSensorData data)
@@ -45,20 +56,48 @@ public class MovuinoSensorUI : MonoBehaviour {
 				average += GetSensorValue (sensorType, sensorData);
 			}
 			average /= sensorDataList.Count;
-			values = average;
-		}
+			_values = average;
+			DefaultSettings ();
+		} else
+			NoMovuinoData ();
+	}
+
+	void NoMovuinoData()
+	{
+		noMovuinoDataText.enabled = true;
+		dataCanvasGroup.alpha = 0.5f;
+		dataCanvasGroup.interactable = false;
+	}
+
+	void DefaultSettings()
+	{
+		noMovuinoDataText.enabled = false;
+		dataCanvasGroup.alpha = 1.0f;
+		dataCanvasGroup.interactable = true;
 	}
 
 	void SetTextValues()
 	{
-		xText.text = values.x.ToString ("F");
-		yText.text = values.y.ToString ("F");
-		zText.text = values.z.ToString ("F");
+		xField.text = _values.x.ToString ("F");
+		yField.text = _values.y.ToString ("F");
+		zField.text = _values.z.ToString ("F");
+	}
+
+	void SetValuesText()
+	{
+		_values.x = float.Parse (xField.text);
+		_values.y = float.Parse (yField.text);
+		_values.z = float.Parse (zField.text);
 	}
 
 	public void Update()
 	{
-		SetSensorData ();
-		SetTextValues ();
+		if (readData) {
+			SetSensorData ();
+			SetTextValues ();
+		} else {
+			SetValuesText ();
+			DefaultSettings ();
+		}
 	}
 }

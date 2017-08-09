@@ -11,12 +11,14 @@ public struct Move {
 	public string name;
 	public SerializableVector3 lowerRange;
 	public SerializableVector3 upperRange;
+	public SerializableVector3 values;
 
-	public Move(string name, SerializableVector3 lowerRange, SerializableVector3 upperRange)
+	public Move(string name, SerializableVector3 lowerRange, SerializableVector3 upperRange, SerializableVector3 values)
 	{
 		this.name = name;
 		this.lowerRange = lowerRange;
 		this.upperRange = upperRange;
+		this.values = values;
 	}
 }
 
