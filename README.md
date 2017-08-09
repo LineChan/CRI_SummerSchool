@@ -48,4 +48,4 @@ Week 2-4 - We made three levels for the game. We went ahead with our plans of th
 Instructions for the Game:
 
 It is a point and click game, the gameplay involves a Movuino and a VR. The Movuino has to placed at the back of the body and strapped tightly because the sensor is sensitive, and the VR can be a simple cardboard VR. See images below for furthur details.
-https://github.com/94810/SweetSpine/tree/Branch1/src/images/Movuino.jpg
+https://github.com/94810/SweetSpine/tree/Branch1/src/images
