@@ -2,6 +2,7 @@
 <MoveCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Moves>
     <Move name="Standing">
+      <moveType>Move1</moveType>
       <lowerRange>
         <x>-0.1</x>
         <y>0</y>
@@ -19,6 +20,7 @@
       </values>
     </Move>
     <Move name="Bending">
+      <moveType>Move2</moveType>
       <lowerRange>
         <x>-0.1</x>
         <y>0</y>

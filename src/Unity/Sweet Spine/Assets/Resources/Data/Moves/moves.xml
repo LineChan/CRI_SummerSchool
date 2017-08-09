@@ -2,24 +2,26 @@
 <MoveCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Moves>
     <Move name="Standing">
+      <moveType>Move1</moveType>
       <tolerance>0</tolerance>
       <lowerRange>
-        <x>-0.179659992</x>
-        <y>-0.6381</y>
-        <z>-0.120379992</z>
+        <x>-0.1</x>
+        <y>0</y>
+        <z>-0.1</z>
       </lowerRange>
       <upperRange>
-        <x>0.08334</x>
-        <y>-0.375100017</y>
-        <z>0.14262</z>
+        <x>-0.2</x>
+        <y>0.3</y>
+        <z>0.25</z>
       </upperRange>
       <values>
-        <x>-0.0481599942</x>
-        <y>-0.5066</y>
-        <z>0.01112</z>
+        <x>0.08</x>
+        <y>0.48</y>
+        <z>0.09</z>
       </values>
     </Move>
     <Move name="Bending">
+      <moveType>Move2</moveType>
       <tolerance>0</tolerance>
       <lowerRange>
         <x>-0.1</x>

@@ -9,14 +9,16 @@ using UnityEngine;
 public struct Move {
 	[XmlAttribute("name")]
 	public string name;
+	public MoveL moveType;
 	public float tolerance;
 	public SerializableVector3 lowerRange;
 	public SerializableVector3 upperRange;
 	public SerializableVector3 values;
 
-	public Move(string name, float tolerance, SerializableVector3 lowerRange, SerializableVector3 upperRange, SerializableVector3 values)
+	public Move(string name, MoveL moveType, float tolerance, SerializableVector3 lowerRange, SerializableVector3 upperRange, SerializableVector3 values)
 	{
 		this.name = name;
+		this.moveType = moveType;
 		this.tolerance = tolerance;
 		this.lowerRange = lowerRange;
 		this.upperRange = upperRange;

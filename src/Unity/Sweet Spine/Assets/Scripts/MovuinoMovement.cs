@@ -23,38 +23,30 @@ namespace Movuino
 		}
 
 		#endregion
-
-		[System.Serializable]
-		public class Position
-		{
-			public Vector3 min;
-			public Vector3 max;
-		} 
-
-		public Position standingMove;
-		public Position anotherMove;
+		public Move move1;
+		public Move move2;
 
 		void Start ()
 		{
-			//standingMove = new Position (new Vector3 (-0.1f, 0, -0.1f), new Vector3 (0.2f, 0.7f, 0.25f)); // experiment values
+			this.move1 = MoveManager.Instance.moveList.moves.Find (x => x.moveType == MoveL.Move1);
+			this.move2 = MoveManager.Instance.moveList.moves.Find (x => x.moveType == MoveL.Move2);
 		}
 		// Update is called once per frame
 		void Update ()
 		{
-
 			Stack<MovuinoSensorData> sensorData = MovuinoManager.Instance.GetLog<MovuinoSensorData> ("/movuinOSC");
 			if (sensorData.ToArray ().Length != 0) {
 				Vector3 data = sensorData.Pop ().accelerometer;
-				if (data.x > standingMove.min.x && data.x < standingMove.max.x
-				    && data.y > standingMove.min.y && data.y < standingMove.max.y
-				    && data.z > standingMove.min.z && data.z < standingMove.max.z) {
-					_movement = MoveL.cat;
-				} else if (data.x > anotherMove.min.x && data.x < anotherMove.max.x
-				           && data.y > anotherMove.min.y && data.y < anotherMove.max.y
-				           && data.z > anotherMove.min.z && data.z < anotherMove.max.z) {
-					_movement = MoveL.dog;
+				if (data.x > move1.lowerRange.x && data.x < move1.upperRange.x
+				    && data.y > move1.lowerRange.y && data.y < move1.upperRange.y
+				    && data.z > move1.lowerRange.z && data.z < move1.upperRange.z) {
+					_movement = MoveL.Move2;
+				} else if (data.x > move2.lowerRange.x && data.x < move2.upperRange.x
+				           && data.y > move2.lowerRange.y && data.y < move2.upperRange.y
+				           && data.z > move2.lowerRange.z && data.z < move2.upperRange.z) {
+					_movement = MoveL.Move1;
 				} else {
-					_movement = MoveL.none;
+					_movement = MoveL.None;
 				}
 			}
 		}

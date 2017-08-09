@@ -14,7 +14,7 @@ public class MoveDropdownUI : MonoBehaviour {
 		_dropdown = GetComponent<Dropdown> ();
 		var moves = MoveManager.Instance.moveList.moves;
 		foreach (var move in moves) {
-			_dropdown.options.Add (new Dropdown.OptionData () { text = move.name });
+			_dropdown.options.Add (new Dropdown.OptionData () { text = move.moveType.ToString() });
 		}
 		_dropdown.onValueChanged.AddListener (delegate { 
 			OnValueChanged(_dropdown);
@@ -27,7 +27,7 @@ public class MoveDropdownUI : MonoBehaviour {
 	{
 		int index = 0;
 		for (int i = 0; i < MoveManager.Instance.moveList.moves.Count; i++) {
-			if (MoveManager.Instance.moveList.moves [i].name == target.options [target.value].text)
+			if (MoveManager.Instance.moveList.moves [i].moveType.ToString() == target.options [target.value].text)
 				index = i;
 		}
 		calibrateManager.currentMoveIndex = index;

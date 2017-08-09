@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public enum MoveL {dog, cat, snake, none};
+public enum MoveL {Move1, Move2, Move3, None};
 
 public class PlayerController : MonoBehaviour {
 	[System.Serializable]

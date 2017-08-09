@@ -86,14 +86,14 @@ public class MovuinoSerialRead : MonoBehaviour, IMovuino
 			if (data.x > standingMove.min.x && data.x < standingMove.max.x
 			     && data.y > standingMove.min.y && data.y < standingMove.max.y
 			     && data.z > standingMove.min.z && data.z < standingMove.max.z) {
-				_movement = MoveL.cat;
+				_movement = MoveL.Move2;
 			} else if (data.x > anotherMove.min.x && data.x < anotherMove.max.x
 			            && data.y > anotherMove.min.y && data.y < anotherMove.max.y
 			            && data.z > anotherMove.min.z && data.z < anotherMove.max.z) {
 
-				_movement = MoveL.dog;
+				_movement = MoveL.Move1;
 			} else {
-				_movement = MoveL.none;
+				_movement = MoveL.None;
 			}
 		}
 	}
