@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldName: World1
   id: 1
-  timeRequirement: 15
+  timeRequirement: 5
   layer:
     serializedVersion: 2
     m_Bits: 256
-  movemement: 1
+  movemement: 0
   color: {r: 0, g: 0.08965492, b: 1, a: 1}

@@ -31,21 +31,14 @@ namespace Movuino
 		[Tooltip("The server data.")]
 		public ServerData serverData = new ServerData ("OSCServer", 7400);
 
-		void Awake()
+		void Start()
 		{
 			if (_instance != null && _instance != this)
 				Destroy (this.gameObject);
 			else {
-				DontDestroyOnLoad (this.gameObject);
 				_instance = this;
-				try {
-					OSCHandler.Instance.Init (serverData, clientData);
-					OSCHandler.Instance.gameObject.transform.SetParent (this.transform);
-				}
-				catch (Exception e) {
-					Debug.LogError (e.Message);
-				}
 			}
+			OSCHandler.Instance.Init (serverData, clientData);
 		}
 
 		public Stack<T> GetLog<T>() where T : MovuinoData, new()
