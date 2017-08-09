@@ -2,37 +2,39 @@
 <MoveCollection xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Moves>
     <Move name="Standing">
+      <tolerance>0</tolerance>
       <lowerRange>
-        <x>-0.1</x>
-        <y>0</y>
-        <z>-0.1</z>
+        <x>-0.179659992</x>
+        <y>-0.6381</y>
+        <z>-0.120379992</z>
       </lowerRange>
       <upperRange>
-        <x>-0.2</x>
-        <y>0.3</y>
-        <z>0.25</z>
+        <x>0.08334</x>
+        <y>-0.375100017</y>
+        <z>0.14262</z>
       </upperRange>
       <values>
-        <x>0.08</x>
-        <y>0.48</y>
-        <z>0.09</z>
+        <x>-0.0481599942</x>
+        <y>-0.5066</y>
+        <z>0.01112</z>
       </values>
     </Move>
     <Move name="Bending">
+      <tolerance>0</tolerance>
       <lowerRange>
-        <x>-0.0101050008</x>
-        <y>0.45601505</y>
-        <z>-0.036065</z>
+        <x>-0.1</x>
+        <y>0</y>
+        <z>-0.6</z>
       </lowerRange>
       <upperRange>
-        <x>0.064345</x>
-        <y>0.530465066</y>
-        <z>0.038385</z>
+        <x>0.1</x>
+        <y>0.5</y>
+        <z>-0.2</z>
       </upperRange>
       <values>
-        <x>0.02712</x>
-        <y>0.493240058</y>
-        <z>0.00116</z>
+        <x>0</x>
+        <y>0.25</y>
+        <z>-0.4</z>
       </values>
     </Move>
   </Moves>

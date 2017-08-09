@@ -56,11 +56,13 @@ public struct ClientLog
 public struct ServerData {
 	public string id;
 	public int port;
+	public float timeOutTime;
 
-	public ServerData(string name, int port)
+	public ServerData(string name, int port, float timeOutTime)
 	{
 		this.id = name;
 		this.port = port;
+		this.timeOutTime = timeOutTime;
 	}
 }
 
@@ -124,7 +126,7 @@ public class OSCHandler : MonoBehaviour
 	/// </summary>
 	public void Init()
 	{
-		CreateServer (new ServerData("OSCServer", 7400));
+		CreateServer (new ServerData("OSCServer", 7400, 3.0f));
 		CreateClient (new ClientData("OSCClient", LocalIPAddress (), 3011));
 	}
 
@@ -220,7 +222,7 @@ public class OSCHandler : MonoBehaviour
 
 	public void CreateServer(ServerData serverData)
 	{
-		CreateServer (serverData.id, serverData.port);
+		CreateServer (serverData.id, serverData.port, serverData.timeOutTime);
 	}
 	
 	/// <summary>
@@ -232,9 +234,10 @@ public class OSCHandler : MonoBehaviour
 	/// <param name="port">
 	/// A <see cref="System.Int32"/>
 	/// </param>
-	public void CreateServer(string serverId, int port)
+	public void CreateServer(string serverId, int port, float timeOutTime)
 	{
         OSCServer server = new OSCServer(port);
+		server.timeOutTime = timeOutTime;
         server.PacketReceivedEvent += OnPacketReceived;
 
         ServerLog serveritem = new ServerLog();

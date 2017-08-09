@@ -53,6 +53,7 @@ namespace UnityOSC
 		private Thread _receiverThread;
 		private OSCPacket _lastReceivedPacket;
 		private int _sleepMilliseconds = 10;
+		private bool _timedOut;
 		#endregion
 		
 		#region Properties
@@ -102,6 +103,26 @@ namespace UnityOSC
 			{
 				_sleepMilliseconds = value;
 			}
+		}
+
+		/// <summary>
+		/// Whether the connection reached the timeout or not
+		/// </summary>
+		/// <value><c>true</c> if timed out; otherwise, <c>false</c>.</value>
+		public bool TimedOut
+		{
+			get {
+				return (_lastReceivedPacket == null || DateTime.Now.Ticks - _lastReceivedPacket.TimeStamp > timeOutTime * TimeSpan.TicksPerSecond);
+			}
+		}
+
+		/// <summary>
+		/// Numbers of seconds until the server considerer that the connexion is lost
+		/// </summary>
+		/// <value>The time out time.</value>
+		public float timeOutTime {
+			get ;
+			set ;
 		}
 		#endregion
 	

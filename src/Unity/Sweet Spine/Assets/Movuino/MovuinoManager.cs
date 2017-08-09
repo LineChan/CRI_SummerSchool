@@ -29,7 +29,14 @@ namespace Movuino
 		/// The server data.
 		/// </summary>
 		[Tooltip("The server data.")]
-		public ServerData serverData = new ServerData ("OSCServer", 7400);
+		public ServerData serverData = new ServerData ("OSCServer", 7400, 5.0f);
+
+		public bool timedOut {
+			get {
+				return (OSCHandler.Instance.Servers == null || OSCHandler.Instance.Servers ["OSCServer"].server == null
+					|| OSCHandler.Instance.Servers ["OSCServer"].server.TimedOut);
+			}
+		}
 
 		void Awake()
 		{

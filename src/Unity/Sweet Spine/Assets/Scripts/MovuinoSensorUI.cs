@@ -49,6 +49,10 @@ public class MovuinoSensorUI : MonoBehaviour {
 
 	void SetSensorData()
 	{
+		if (MovuinoManager.Instance == null || MovuinoManager.Instance.timedOut) {
+			NoMovuinoData ();
+			return;
+		}
 		Stack<MovuinoSensorData> sensorDataList = MovuinoManager.Instance.GetLog<MovuinoSensorData> ("/movuinOSC");
 		if (sensorDataList.Count != 0) {
 			Vector3 average = Vector3.zero;
