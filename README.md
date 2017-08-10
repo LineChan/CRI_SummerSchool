@@ -30,6 +30,15 @@ Gameplay is a point and click game and the user has to click the tab on the VR t
 
 ## Game Set Up
 
+### Movuino
+* Download the firmware ![here](https://github.com/hssnadr/Movuino_HandsON/tree/master/01_Firmware) and follow the instructions.
+* Make sure to change the following values inside your firmware code :
+     * `const char * ssid = "my_box_name";` set the name of your wifi network
+     * `const char * pass = "my_password";` type the password of the network
+     * `const char * hostIP = "192.168.1.35";` set the ip address of **YOUR ANDROID PHONE** which is also connected to the same Wifi network and will have the game installed
+     * `const unsigned int port = 7400;` make sure the port is the same as the Server port of the MovuinoManager gameObject in Unity. By default, it should be set to 7400.
+
+
 The Movuino has to placed at the back of the body and strapped tightly because the sensor is sensitive as shown below
 ![Movuino placement](path/to/Movuino_placement.jpg)
 
