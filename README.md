@@ -52,6 +52,12 @@ The Movuino has to placed at the back of the body and strapped tightly because t
  * Graphical ressources goes in src/images
  * Plain Text,Markdown,Latex, source file goes in doc/raw
 
+## Why did the project miss some Assets ?
+
+Because we use some commercial assets ans we can't put it on the git.
+We use Tornado Bandits - Low Poly Dungeon Pack it was about 40$ the time we buy it.
+
+ 
 **Google Doc for the project**
 https://docs.google.com/document/d/1MWVjfJPq188H3nXS3WQb_I_Q_EddOqtWtyibisU9UtI/edit#
 
