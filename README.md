@@ -11,11 +11,9 @@
 	|  __/| | | (_) | |  __/ (__| |_ 
 	|_|   |_|  \___// |\___|\___|\__|
 	              |__/    
+ 
 
-
-				  
-
-##Foreword
+## Foreword
 
 SweetSpine is a serious game for both back-pain prevention and cure. The serious part of the game is hidden and we want our users to play this game as a fun game but do moves that are good for their back at the same time.
 BackPain has been a major health problem and statistics show that 8 out of every 10 Americans will experience back pain at one point or other in their life. We at Centre for Research and Interdisciplinary summer school are students from different backgrounds and countries and 5 of us thought why not try to tackle this problem this summer? And Voila, we have for you
