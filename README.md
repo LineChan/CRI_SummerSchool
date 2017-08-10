@@ -12,6 +12,31 @@
 	|_|   |_|  \___// |\___|\___|\__|
 	              |__/    
 
+
+				  
+
+##Foreword
+
+SweetSpine is a serious game for both back-pain prevention and cure. The serious part of the game is hidden and we want our users to play this game as a fun game but do moves that are good for their back at the same time.
+BackPain has been a major health problem and statistics show that 8 out of every 10 Americans will experience back pain at one point or other in their life. We at Centre for Research and Interdisciplinary summer school are students from different backgrounds and countries and 5 of us thought why not try to tackle this problem this summer? And Voila, we have for you
+Sweet Spine!
+
+* Target Audience Anyone who can bend!
+* Challenges of the Game -  Memory, Observance power and Puzzle solving skills in general
+* Medical Targets - Achieve a reduction in back-pain for the users.
+
+## Gameplay
+
+SweetSpine is a point and click game, the gameplay involves a Movuino and a VR. The Movuino has to placed at the back of the body and strapped tightly because the sensor is sensitive as shown below
+![]({{site.baseurl}}//Movuino.jpg)
+Gameplay is a point and click game and the user has to click the tab on the VR to move, pick or drop objects. The main back pain move comes as a gameplay to change environments. The user will see a platform with a funny sign - "Bend to pay respects" and then the user has to make a move for a certain amount of time which is a variable. This changes the environment.
+
+## Tech Used 
+
+* Unity3D
+* Google [Cardboard](https://vr.google.com/cardboard/) Unity API
+* [Movuino](https://hackaday.io/project/12591-movuino)
+ 
 ## Project File Structure
 
 ### File Structure for Game Resources
@@ -28,32 +53,11 @@
 **Google Doc for the project**
 https://docs.google.com/document/d/1MWVjfJPq188H3nXS3WQb_I_Q_EddOqtWtyibisU9UtI/edit#
 
-_Foreword - SweetSpine is a serious game for both back-pain prevention and cure. The serious part of the game is hidden and we want our users to play this game as a fun game but do moves that are good for their back at the same time._
-
-Target Audience - Anyone who can bend!
-
-Challenges of the Game -  Memory, Observance power and Puzzle solving skills in general
-
-Medical Targets - Achieve a reduction in back-pain for the users.
-
-BackPain has been a major health problem and statistics show that 8 out of every 10 Americans will experience back pain at one point or other in their life. We at Centre for Research and Interdisciplinary summer school are students from different backgrounds and countries and 5 of us thought why not try to tackle this problem this summer? And Voila, we have for you
-Sweet Spine!
-
-We worked on our project for four weeks from mid July till mid August. We will first try to describe the breakdown of our project week wise and then write instructions on how to use the Game.
-
-Week 1 - The gameplay, users, tools and resources required etc were decided in this week. We have another link that we uploaded during the week https://github.com/94810/SweetSpine/blob/master/doc/brainstorm1.txt. We did some research on back-pain and contacted some mentors. In terms of research we read some papers previously published on back pain prevention and also looked at some existing apps and games for preventing back-pain. We made it clear that we wanted to create a fun game and not a tutorial for back-pain. We contacted Koondal which is a French startup for ... But we do not have medical verification for our moves in the game which is a roadblock to be solved. We required a sensor, VR board and a game engine for our project. For the Game Engine we chose unity. For the VR we chose Google's Cardboard VR and for sensor we choose a Movuino which a product of CRI developed by Kevin LHoste. We used some libraries in unity that are created for Movuino at CRI itself. So our final project is a puzzle based game for backpain that uses VR and Movuino.
-
-Week 2-4 - We made three levels for the game. We went ahead with our plans of the first week and completed a presentable game by 4-8-17.
-We created three different environments and have three different positions for the movement. We got critical boundaries for the movements using the Movuino. 
-![]({{site.baseurl}}//VR.jpg)
-**GAME PLAY-**
-
-SweetSpine is a point and click game, the gameplay involves a Movuino and a VR. The Movuino has to placed at the back of the body and strapped tightly because the sensor is sensitive as shown below
-![]({{site.baseurl}}//Movuino.jpg) 
-
-The VR box can be a regular google cardboard VR box. It has to put on the forehead like this.
 
 
 
-Gameplay is a point and click game and the user has to click the tab on the VR to move, pick or drop objects. The main back pain move comes as a gameplay to change environments. The user will see a platform with a funny sign - "Bend to pay respects" and then the user has to make a move for a certain amount of time which is a variable. This changes the environment.
+
+
+
+
 
