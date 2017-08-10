@@ -11,7 +11,47 @@
 	|  __/| | | (_) | |  __/ (__| |_ 
 	|_|   |_|  \___// |\___|\___|\__|
 	              |__/    
+ 
 
+## Foreword
+
+SweetSpine is a serious game for both back-pain prevention and cure. The serious part of the game is hidden and we want our users to play this game as a fun game but do moves that are good for their back at the same time.
+BackPain has been a major health problem and statistics show that 8 out of every 10 Americans will experience back pain at one point or other in their life. We at Centre for Research and Interdisciplinary summer school are students from different backgrounds and countries and 5 of us thought why not try to tackle this problem this summer? And Voila, we have for you
+Sweet Spine!
+
+* Target Audience Anyone who can bend!
+* Challenges of the Game -  Memory, Observance power and Puzzle solving skills in general
+* Medical Targets - Achieve a reduction in back-pain for the users.
+
+## Gameplay
+
+Gameplay is a point and click game and the user has to click the tab on the VR to move, pick or drop objects. The main back pain move comes as a gameplay to change environments. The user will see a platform with a funny sign - "Bend to pay respects" and then the user has to make a move for a certain amount of time which is a variable. This changes the environment.
+
+
+## Game Set Up
+
+### Movuino
+#### Firmware
+* Download the firmware ![here](https://github.com/hssnadr/Movuino_HandsON/tree/master/01_Firmware) and follow the instructions in the README
+* Make sure to change the following values inside your firmware code :
+     * `const char * ssid = "my_box_name";` set the name of your wifi network
+     * `const char * pass = "my_password";` type the password of the network
+     * `const char * hostIP = "192.168.1.35";` set the ip address of **YOUR ANDROID PHONE** which is also connected to the same Wifi network and will have the game installed
+     * `const unsigned int port = 7400;` make sure the port is the same as the Server port of the MovuinoManager GameObject in Unity. By default, it should be set to 7400.
+
+#### Device
+The Movuino has to placed at the back of the body and strapped tightly because the sensor is sensitive as shown below
+![Movuino placement](path/to/Movuino_placement.jpg)
+
+### Unity
+* Build the .apk from Unity.
+
+## Tech Used 
+
+* Unity3D
+* Google [Cardboard](https://vr.google.com/cardboard/) Unity API
+* [Movuino](https://hackaday.io/project/12591-movuino)
+ 
 ## Project File Structure
 
 ### File Structure for Game Resources
@@ -22,10 +62,23 @@
 
 ### File Structure for Documentation Ressources
 
- * Graphical ressources goes in doc/img
+ * Graphical ressources goes in src/images
  * Plain Text,Markdown,Latex, source file goes in doc/raw
 
-Google Doc of the project
+## Why did the project miss some Assets ?
+
+Because we use some commercial assets and we can't put it on the git.
+We use Tornado Bandits - Low Poly Dungeon Pack it was about 40$ the time we bought it.
+
+ 
+**Google Doc for the project**
 https://docs.google.com/document/d/1MWVjfJPq188H3nXS3WQb_I_Q_EddOqtWtyibisU9UtI/edit#
 
-           
+
+
+
+
+
+
+
+
