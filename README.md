@@ -25,9 +25,13 @@ Sweet Spine!
 
 ## Gameplay
 
-SweetSpine is a point and click game, the gameplay involves a Movuino and a VR. The Movuino has to placed at the back of the body and strapped tightly because the sensor is sensitive as shown below
-![]({{site.baseurl}}//Movuino.jpg)
 Gameplay is a point and click game and the user has to click the tab on the VR to move, pick or drop objects. The main back pain move comes as a gameplay to change environments. The user will see a platform with a funny sign - "Bend to pay respects" and then the user has to make a move for a certain amount of time which is a variable. This changes the environment.
+
+
+## Game Set Up
+
+The Movuino has to placed at the back of the body and strapped tightly because the sensor is sensitive as shown below
+![Movuino placement](path/to/Movuino_placement.jpg)
 
 ## Tech Used 
 
