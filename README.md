@@ -1,7 +1,8 @@
 #	CRI Summer School 2017
 ### Summary
 * [Presentation](#presentation)
-Project
+* [Serious Game](#seriousgame)
+* [Pictures](#pictures)
 
 # [Presentation](#presentation)
 ## What is the CRI ?
@@ -18,3 +19,6 @@ Find all the projects here : [*Projects Class 2017*](http://projects.class2017.c
 ### Programm
 
 ![Timeline](/img/timeline.png)
+
+# [Serious Game](#seriousgame)
+# [Pictures](#pictures)
