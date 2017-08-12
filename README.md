@@ -48,8 +48,7 @@ We would like our game to tackle down these two problems at the same time.
 
 
 Source : 
-- (1) : pdf of the INPES about back pain
-[http://inpes.santepubliquefrance.fr/70000/dp/05/dp050127.pdf](http://inpes.santepubliquefrance.fr/70000/dp/05/dp050127.pdf])
+- (1) : pdf of the INPES about back pain[http://inpes.santepubliquefrance.fr/70000/dp/05/dp050127.pdf](http://inpes.santepubliquefrance.fr/70000/dp/05/dp050127.pdf])
 
 - (2) : TED conference on gamification of physical therapy [https://www.ted.com/talks/cosmin_mihaiu_physical_therapy_is_boring_play_a_game_instead#t-264985](https://www.ted.com/talks/cosmin_mihaiu_physical_therapy_is_boring_play_a_game_instead#t-264985)
 
