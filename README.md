@@ -1,7 +1,7 @@
 #	CRI Summer School 2017
 ### Summary
 * [Presentation](#presentation)
-* [Serious Game](#seriousgame)
+* [Health Game](#healthgame)
 * [Photos](#photos)
 
 # [Presentation](#presentation)
@@ -30,14 +30,13 @@ More about the CLaSS 2017 :
 
 ![Timeline](/img/timeline.png)
 
-# [Serious Game](#seriousgame)
+# [Health Game](#healthgame)
 * [Context](#context)
 * [Sweet Spine](#sweetspine)
-* [Sources](#sources)
 
 ### [Context](#context)
 
-The spine is one of the most used articulation : more than 1500 times a day ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus lower back pain is the second reason why people consult their general practitioner. It results in a 2.3 million euro bill to the Medical Benefit Fund. (1)
+The **spine** is one of the most used articulation : more than **1500 times a day** ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus **lower back pain** is the second reason why people consult their general practitioner. It results in a 2.3 million euro bill to the Medical Benefit Fund. (1)
 
 Back pains mainly come from our sedentary lifestyle and its consequences, meaning our partial inactivity. Most of the time no medical care nor further exams are necessary. The best way to prevent back pains or get rid of is to stretch and strengthen it. Therefore personal habits have an important role to play in these situations.
 
@@ -49,7 +48,6 @@ We would like our game to tackle down these two problems at the same time. We wa
 
 
 ### [Sweet Spine](#sweetspine)
-### [Sources](#sources)
 
 # [Photos](#photos)
 
