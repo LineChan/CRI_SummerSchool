@@ -11,7 +11,7 @@ The Center for Reseach and Interdisciplinarity (CRI : *Centre de Recherches Inte
 
 More info here : [*CRI Website*](https://cri-paris.org/)
 
-## Labs Summer School ?
+## The Labs Summer School
 
 The CRI Summer School is a **7 week challenge-based program**, hosted by the CRI GameLab and MakerLab.
 In it, 50 international students, from a variety of fields, join forces to learn through masterclasses, workshops, hackathons, and by **developing projects tackling the UN’s Sustainable Development Goals** – specifically Health & Environment.
