@@ -18,12 +18,12 @@ In it, 50 international students, from a variety of fields, join forces to learn
 
 *How?*
 
-By creating games and making devices that benefit from digital fabrication *(3D printing, rapid prototyping, etc.)*. Experts in serious game making, medicine, environmental science, digital fabrication, frugal innovation – and more! – mentor groups of students as they hack their way to a better world
+By creating games and making devices that benefit from **digital fabrication** *(3D printing, rapid prototyping, etc.)*. Experts in serious game making, medicine, environmental science, digital fabrication, frugal innovation – and more! – mentor groups of students as they hack their way to a better world.
 
-Find all the projects here : [*Projects Class 2017*](http://projects.class2017.cri-paris.org/)
-Twitter : CRI - Summer School 2017
-Summer School Google Drive (Workshop, Masterclasses, Projects)
-CRI Twitter
+Find all the projects made by the students here :
+* [*Projects Class 2017*](http://projects.class2017.cri-paris.org/)
+* [*Twitter*](https://twitter.com/SDGCLaSS)
+* [*Google Drive*](https://drive.google.com/drive/folders/0B9utIJzYBJwXcVhMSkEzVTFrb2c)
 ### Programm
 
 ![Timeline](/img/timeline.png)
