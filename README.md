@@ -31,6 +31,11 @@ More about the CLaSS 2017 :
 ![Timeline](/img/timeline.png)
 
 # [Serious Game](#seriousgame)
+* [Context](#context)
+* [Sweet Spine](#sweetspine)
+
+### [Context](#context)
+### [Sweet Spine](#sweetspine)
 # [Photos](#photos)
 
 
