@@ -20,8 +20,10 @@ In it, 50 international students, from a variety of fields, join forces to learn
 
 By creating games and making devices that benefit from **digital fabrication** *(3D printing, rapid prototyping, etc.)*. Experts in serious game making, medicine, environmental science, digital fabrication, frugal innovation – and more! – mentor groups of students as they hack their way to a better world.
 
+All the projects made by students  were exposed at the Cite des Sciences et de l'Industrie in Paris on August 4th 2017.
+
 More about the CLaSS 2017 :
-* [*Project Presentation for the Exposition at the Cite des Sciences et de l'Industrie in Paris*](http://projects.class2017.cri-paris.org/)
+* [*Project Presentation*](http://projects.class2017.cri-paris.org/)
 * [*Twitter*](https://twitter.com/SDGCLaSS)
 * [*Google Drive*](https://drive.google.com/drive/folders/0B9utIJzYBJwXcVhMSkEzVTFrb2c)
 ### Programm
