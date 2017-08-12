@@ -23,7 +23,7 @@ By creating games and making devices that benefit from **digital fabrication** *
 All the projects made by students  were exposed at the **Cite des Sciences et de l'Industrie** in Paris on **August 4th 2017**.
 
 More about the CLaSS 2017 :
-* [*Project Presentation*](http://projects.class2017.cri-paris.org/)
+* [*Projects' Presentation*](http://projects.class2017.cri-paris.org/)
 * [*Twitter*](https://twitter.com/SDGCLaSS)
 * [*Google Drive*](https://drive.google.com/drive/folders/0B9utIJzYBJwXcVhMSkEzVTFrb2c)
 ### Programm
