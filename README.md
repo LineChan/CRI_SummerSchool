@@ -1,31 +1,20 @@
-	
-	 ____                   _   ____        _            
-	/ ___|_      _____  ___| |_/ ___| _ __ (_)_ __   ___ 
-	\___ \ \ /\ / / _ \/ _ \ __\___ \| '_ \| | '_ \ / _ \
-	 ___) \ V  V /  __/  __/ |_ ___) | |_) | | | | |  __/
-	|____/ \_/\_/ \___|\___|\__|____/| .__/|_|_| |_|\___|
-	                                 |_|                 
-	 ____            _           _   
-	|  _ \ _ __ ___ (_) ___  ___| |_ 
-	| |_) | '__/ _ \| |/ _ \/ __| __|
-	|  __/| | | (_) | |  __/ (__| |_ 
-	|_|   |_|  \___// |\___|\___|\__|
-	              |__/    
+#	CRI Summer School 2017
 
-## Project File Structure
+## What is the CRI ?
 
-### File Structure for Game Resources
 
- * Graphical goes in src/img
- * Audio goes in src/sound
- * Code goes in src/[name_of_the_module] 
+More info here : [*CRI Website*](https://cri-paris.org/)
 
-### File Structure for Documentation Ressources
+## What is the Labs Summer School ?
 
- * Graphical ressources goes in doc/img
- * Plain Text,Markdown,Latex, source file goes in doc/raw
+The CRI Summer School is a 7 week challenge-based programme, hosted by the CRI GameLab and MakerLab. In it, 50 international students, from a variety of fields, will join forces to learn through masterclasses, workshops, hackathons, and by developing projects tackling the UN’s Sustainable Development Goals – specifically Health & Environment.
+How? By creating games and making devices that benefit from digital fabrication (3D printing, rapid prototyping, etc.). Experts in serious game making, medicine, environmental science, digital fabrication, frugal innovation – and more! – will mentor groups of students as they hack their way to a better world
 
-Google Doc of the project
-https://docs.google.com/document/d/1MWVjfJPq188H3nXS3WQb_I_Q_EddOqtWtyibisU9UtI/edit#
+### Program
 
-           
+Week 1 : Workshops on serious games
+Week 2 : Workshops in the MakerLab (digital fabrication tools and open source hardware)
+Week 3 : Kickstarting project with mentors
+Week 4 - 5 : Producing a functionnal prototype
+Week 6 : Exposition on August 4th 2017 at the Cité des Sciences et de l’Industrie in Paris, so  the public gets to experiment projects.
+Week 7 : Improve projects thanks to the feedbacks and set them up for possible incubation and acceleration
