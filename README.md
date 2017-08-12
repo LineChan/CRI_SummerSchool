@@ -7,7 +7,7 @@
 # [Presentation](#presentation)
 ## What is the CRI ?
 
-The Center for Reseach and Interdisciplinarity (CRI : *Centre de Recherches Interdisciplinaire* in Paris) is dedicated to **training through research**, especially in Biology, and to alternative way to learn. Their method is based on  collective intelligence and learning by doing.
+The Center for Reseach and Interdisciplinarity (CRI : *Centre de Recherches Interdisciplinaire* in Paris) is dedicated to **training through research**, especially in Biology, and to alternative ways to learn. Their method is based on  collective intelligence and learning by doing.
 
 More info here : [*CRI Website*](https://cri-paris.org/)
 
