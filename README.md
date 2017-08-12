@@ -28,7 +28,9 @@ More about the CLaSS 2017 :
 
 ### Programm
 ![Timeline](/img/timeline.png)
+
 # [Health Game](#healthgame)
+
 * [Context](#context)
 * [Sweet Spine](#sweetspine)
 
