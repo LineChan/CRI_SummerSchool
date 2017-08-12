@@ -2,9 +2,9 @@
 ### Summary
 * [Presentation](#presentation)
 * [Serious Game](#seriousgame)
-* [Pictures](#pictures)
+* [Photos](#photos)
 
-# [Presentation](#presentation)
+[Presentation](#presentation)
 ## What is the CRI ?
 
 
@@ -16,9 +16,14 @@ The CRI Summer School is a 7 week challenge-based programme, hosted by the CRI G
 How? By creating games and making devices that benefit from digital fabrication (3D printing, rapid prototyping, etc.). Experts in serious game making, medicine, environmental science, digital fabrication, frugal innovation – and more! – will mentor groups of students as they hack their way to a better world
 
 Find all the projects here : [*Projects Class 2017*](http://projects.class2017.cri-paris.org/)
+Twitter : CRI - Summer School 2017
+Summer School Google Drive (Workshop, Masterclasses, Projects)
+CRI Twitter
 ### Programm
 
 ![Timeline](/img/timeline.png)
 
-# [Serious Game](#seriousgame)
-# [Pictures](#pictures)
+[Serious Game](#seriousgame)
+[Photos](#photos)
+
+
