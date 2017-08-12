@@ -13,8 +13,14 @@ How? By creating games and making devices that benefit from digital fabrication 
 ### Program
 
 Week 1 : Workshops on serious games
+
 Week 2 : Workshops in the MakerLab (digital fabrication tools and open source hardware)
+
 Week 3 : Kickstarting project with mentors
+
 Week 4 - 5 : Producing a functionnal prototype
+
 Week 6 : Exposition on August 4th 2017 at the Cité des Sciences et de l’Industrie in Paris, so  the public gets to experiment projects.
+
 Week 7 : Improve projects thanks to the feedbacks and set them up for possible incubation and acceleration
+
