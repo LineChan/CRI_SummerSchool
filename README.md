@@ -18,7 +18,7 @@ In it, 50 international students, from a variety of fields, join forces to learn
 
 *How?*
 
-By creating games and making devices that benefit from digital fabrication (3D printing, rapid prototyping, etc.). Experts in serious game making, medicine, environmental science, digital fabrication, frugal innovation – and more! – will mentor groups of students as they hack their way to a better world
+By creating games and making devices that benefit from digital fabrication *(3D printing, rapid prototyping, etc.)*. Experts in serious game making, medicine, environmental science, digital fabrication, frugal innovation – and more! – mentor groups of students as they hack their way to a better world
 
 Find all the projects here : [*Projects Class 2017*](http://projects.class2017.cri-paris.org/)
 Twitter : CRI - Summer School 2017
