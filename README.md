@@ -36,16 +36,15 @@ More about the CLaSS 2017 :
 
 ### [Context](#context)
 
-The **spine** is one of the most used articulation : more than **1500 times a day** ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus **lower back pain** is the second reason why people consult their general practitioner. It results in a 2.3 million euro bill to the Medical Benefit Fund. (1)
+The **spine** is one of the most used articulation : more than **1500 times a day** ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus **lower back pain** is the second reason why people consult their general practitioner. It results in a **2.3 million euro bill** to the Medical Benefit Fund. (1)
 
-Back pains mainly come from our sedentary lifestyle and its consequences, meaning our partial inactivity. Most of the time no medical care nor further exams are necessary. The best way to prevent back pains or get rid of is to stretch and strengthen it. Therefore personal habits have an important role to play in these situations.
+Back pains mainly come from our **sedentary lifestyle** and its consequences, meaning our partial inactivity. Most of the time no medical care nor further exams are necessary. The best way to prevent back pains or get rid of is to stretch and strengthen it. Therefore **personal habits** have an important role to play in these situations.
 
-As a solution awareness campaigns were launched. Medical books were distributed (“Osons parler”) and doctors started to use interpretative guides with their patients. However their impact is limited :
-most of the time people don’t feel concerned until they experience back pain
-knowing the right positions isn’t adopting them because training is needed to correct body postures. A study showed that 70% of the patients don’t practice at home exercises given by their practitioner. (2)
+As a solution awareness campaigns were launched. Medical books were distributed (*“Osons parler”*) and doctors started to use interpretative guides with their patients. However their **impact is limited** :
+- most of the time people don’t feel concerned until they experience back pain
+- knowing the right positions isn’t adopting them because training is needed to correct body postures. A study showed that 70% of the patients don’t practice at home exercises given by their practitioner. (2)
 
-We would like our game to tackle down these two problems at the same time. We want to hide the serious part of the game so the people would play it not because they have to, but because they enjoy it.
-
+We would like our game to tackle down these two problems at the same time. 
 
 ### [Sweet Spine](#sweetspine)
 
