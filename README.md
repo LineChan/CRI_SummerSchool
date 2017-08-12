@@ -36,6 +36,7 @@ More about the CLaSS 2017 :
 
 ### [Context](#context)
 
+#### [Problematic]
 The **spine** is one of the most used articulation : more than **1500 times a day** ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus **lower back pain** is the second reason why people consult their general practitioner. It results in a **2.3 million euro bill** to the Medical Benefit Fund. (1)
 
 Back pains mainly come from our **sedentary lifestyle** and its consequences, meaning our partial inactivity. Most of the time no medical care nor further exams are necessary. The best way to prevent back pains or get rid of is to stretch and strengthen it. Therefore **personal habits** have an important role to play in these situations.
@@ -47,10 +48,16 @@ As a solution awareness campaigns were launched. Medical books were distributed 
 We would like our game to tackle down these two problems at the same time. 
 
 
-### Source : 
+### Sources : 
 - (1) : pdf of the INPES about back pain [INPES](http://inpes.santepubliquefrance.fr/70000/dp/05/dp050127.pdf])
 
 - (2) : TED conference on gamification of physical therapy [TED.com](https://www.ted.com/talks/cosmin_mihaiu_physical_therapy_is_boring_play_a_game_instead#t-264985)
+
+2) What are the current available solutions and their limits ?
+We look up at companies on the market and found Motek Force Link, a rehabilitation center in Amsterdam specialized in balance disorder. With their partnerships dedicated to recovering technologies and virtual reality they have a huge infrastructure with high technologies. MIRA Rehab in London  (http://www.mirarehab.com/) also releases therapeutic games on movement recognitions thanks to a camera. 
+To finish we hunt for startups working on back pains. Thuasne (http://monmaldedos.fr/) and Koondal (http://koondal.fr/) offer their user to track their activities during the day and thanks to a chatbot or an app their would receive yoga postures according to the data collected and the exercises the users want to practice. We contacted Koondal and met them. They lent us some materials so we can quickly start to work on our project.
+3) Target
+	Because the major part of the population is concerned we think that a massive target can be reached. Indeed more than 70% of the people play video games, gender parity is mostly respected and more than one in four players is on smartphone. Most of the interviewed people (more than 70%) play for fun and only 10% of them to learn something. (1) This reinforced the idea that we have to make the educational part as discreet as possible so we can target a larger public.
 
 ### [Sweet Spine](#sweetspine)
 
