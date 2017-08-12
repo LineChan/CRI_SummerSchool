@@ -37,7 +37,7 @@ More about the CLaSS 2017 :
 
 ### [Context](#context)
 
-#### Problematic
+### Problematic
 
 The **spine** is one of the most used articulation : more than **1500 times a day** ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus **lower back pain** is the second reason why people consult their general practitioner. It results in a **2.3 million euro bill** to the Medical Benefit Fund. (1)
 
