@@ -43,21 +43,20 @@ As a solution awareness campaigns were launched. Medical books were distributed 
 
 We would like our game to tackle down these two problems at the same time. 
 
-### What are the current available solutions and their limits ?
+### What are the current available solutions ?
 We look up at companies on the market and found [Motek Force Link](https://www.motekforcelink.com/products/), a rehabilitation center in Amsterdam specialized in **balance disorder**. With their partnerships dedicated to recovering technologies and virtual reality they have a huge infrastructure with high technologies. [MIRA Rehab](https://www.motekforcelink.com/products/) in London also releases therapeutic games on movement recognitions thanks to a camera. 
 
-Because we wanted to create something affordable,  we hunt for startups working on back pains with IoT devices. [Thuasne](http://monmaldedos.fr/) and [Koondal](http://koondal.fr/) offer their users to track their activities during the day and thanks to a chatbot or an app their would receive yoga postures according to the data collected and the exercises the users want to practice. We contacted Koondal and met them. They lent us some materials so we can **quickly start to work on our project**.
+Because we wanted to create **something affordable** (with an investement less than 100euros),  we hunt for startups working on back pains with IoT devices. [Thuasne](http://monmaldedos.fr/) and [Koondal](http://koondal.fr/) offer their users to track their activities during the day and thanks to a chatbot or an app their would receive yoga postures according to the data collected and the exercises the users want to practice. We contacted Koondal and met them. They lent us some materials so we can **quickly start to work on our project**.
 
 ### Target
-Because the major part of the population is concerned we think that a massive target can be reached. Indeed more than **70% of the people play video games**, gender parity is mostly respected and more than one in four players is on smartphone. Most of the interviewed people (more than 70%) play for fun and only 10% of them to learn something. (1) This reinforced the idea that we have to make **the educational part as discreet as possible** so we can target a larger public.
+Because the major part of the population is concerned we think that a massive target can be reached. Indeed more than **70% of the people play video games**, gender parity is mostly respected and more than one in four players is on smartphone. Most of the people (more than 70%) play for fun and only 10% of them to learn something. (1) This reinforced the idea that we have to make **the educational part as discreet as possible** so we can target a larger public.
 
 ![VideoGamePenetration](/img/videogamepenetration.png)
 
 Video game penetration and age repartition (%)
 How to read : “between October 2012 and March 2013, 86.1% of the French population between 6 and 9 years old played a video game and 26.2% of players are between 35 and 49 years old”
 
-
-Because of the technology we use (*mobile application, virtual reality headset*), we reduced our target to people from 15 to 50 years old, meaning we aim at groups with more than 60% of players. We also decided to remove younger players because a smartphone is required to play the game. Moreover the gameplay is based on enigmaa resolutions and puzzles  so it might be over complicated for kids or young teens.
+Because of the technology we use (*mobile application, virtual reality headset*), we reduced our target to people from 18 to 50 years old, meaning we aim at groups with more than 60% of players. We also decided to remove younger players because a **smartphone** is required to play the game. Moreover the gameplay is based on **enigma** and puzzles in **virtual reality**  so it might be over complicated for kids or young teens.
 
 #### Sources : 
 - (1) : pdf of the INPES about back pain [INPES](http://inpes.santepubliquefrance.fr/70000/dp/05/dp050127.pdf])
