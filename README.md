@@ -1,10 +1,10 @@
 # CRI Summer School 2017
-### Summary
+### [Summary] (*summary)
 * [Presentation](#presentation)
 * [Health Game](#healthgame)
 * [Photos](#photos)
 
-# [Presentation](#presentation)
+# [Presentation](#summary)
 ## What is the CRI ?
 
 The Center for Reseach and Interdisciplinarity (CRI : *Centre de Recherches Interdisciplinaire* in Paris) is dedicated to **training through research**, especially in Biology, and alternative ways to learn. Their method is based on  collective intelligence and learning by doing.
@@ -29,12 +29,12 @@ More about the CLaSS 2017 :
 ### Programm
 ![Timeline](/img/timeline.png)
 
-# [Health Game](#healthgame)
+# [Health Game](#summary)
 
 * [Context](#context)
 * [Sweet Spine](#sweetspine)
 
-### [Context](#context)
+### [Context](#healthgame)
 ### Problematic
 The **spine** is one of the most used articulation : more than **1500 times a day** ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus **lower back pain** is the second reason why people consult their general practitioner. It results in a **2.3 million euro bill** to the Medical Benefit Fund. (1)
 
@@ -67,7 +67,7 @@ Because of the technology we use (*mobile application, virtual reality headset*)
 
 - (2) : TED conference on gamification of physical therapy [TED.com](https://www.ted.com/talks/cosmin_mihaiu_physical_therapy_is_boring_play_a_game_instead#t-264985)
 
-### [Sweet Spine](#sweetspine)
+### [Sweet Spine](#healthgame)
 
 
 
