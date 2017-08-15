@@ -1,5 +1,5 @@
 # CRI Summer School 2017
-### [Summary] (*summary)
+### [Summary] (#summary)
 * [Presentation](#presentation)
 * [Health Game](#healthgame)
 * [Photos](#photos)
