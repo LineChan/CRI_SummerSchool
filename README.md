@@ -31,7 +31,7 @@ More about the CLaSS 2017 :
 
 # [Health Game](#summary)
 
-### Context
+## Context
 ### Problematic
 The **spine** is one of the most used articulation : more than **1500 times a day** ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus **lower back pain** is the second reason why people consult their general practitioner. It results in a **2.3 million euro bill** to the Medical Benefit Fund. (1)
 
@@ -58,12 +58,12 @@ How to read : “between October 2012 and March 2013, 86.1% of the French popula
 
 Because of the technology we use (*mobile application, virtual reality headset*), we reduced our target to people from 18 to 50 years old, meaning we aim at groups with more than 60% of players. We also decided to remove younger players because a **smartphone** is required to play the game. Moreover the gameplay is based on **enigma** and puzzles in **virtual reality**  so it might be over complicated for kids or young teens.
 
-#### Sources : 
+##### Sources : 
 - (1) : pdf of the INPES about back pain [INPES](http://inpes.santepubliquefrance.fr/70000/dp/05/dp050127.pdf])
 
 - (2) : TED conference on gamification of physical therapy [TED.com](https://www.ted.com/talks/cosmin_mihaiu_physical_therapy_is_boring_play_a_game_instead#t-264985)
 
-### Sweet Spine
+## Sweet Spine
 
 
 
