@@ -63,7 +63,7 @@ Because of the technology we use (*mobile application, virtual reality headset*)
 
 - (2) : TED conference on gamification of physical therapy [TED.com](https://www.ted.com/talks/cosmin_mihaiu_physical_therapy_is_boring_play_a_game_instead#t-264985)
 
-## Sweet Spine
+## Our project : a medicinal game to prevent back pains
 
 
 
