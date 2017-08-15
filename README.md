@@ -1,8 +1,9 @@
 # CRI Summer School 2017
-### [Summary] (#summary)
+### [Summary]
 * [Presentation](#presentation)
 * [Health Game](#healthgame)
 * [Photos](#photos)
+* [Summary](#summary)
 
 # [Presentation](#summary)
 ## What is the CRI ?
