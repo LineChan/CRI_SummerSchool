@@ -31,7 +31,7 @@ More about the CLaSS 2017 :
 
 # [Health Game](#summary)
 
-### [Context](#healthgame)
+### Context
 ### Problematic
 The **spine** is one of the most used articulation : more than **1500 times a day** ! People from 15 to 45 years old are the most concerned and one in two kids already experienced it. Thus **lower back pain** is the second reason why people consult their general practitioner. It results in a **2.3 million euro bill** to the Medical Benefit Fund. (1)
 
@@ -64,7 +64,7 @@ Because of the technology we use (*mobile application, virtual reality headset*)
 
 - (2) : TED conference on gamification of physical therapy [TED.com](https://www.ted.com/talks/cosmin_mihaiu_physical_therapy_is_boring_play_a_game_instead#t-264985)
 
-### [Sweet Spine](#healthgame)
+### Sweet Spine
 
 
 
