@@ -3,7 +3,6 @@
 * [Presentation](#presentation)
 * [Health Game](#healthgame)
 * [Photos](#photos)
-* [Summary](#summary)
 
 # [Presentation](#summary)
 ## What is the CRI ?
