@@ -67,6 +67,8 @@ Because of the technology we use (*mobile application, virtual reality headset*)
 ## Our project
 We wanted to develop an educative game that could prevent people from back pains by encouraging them to **exercise regularly** or by **supervising their rehabilitation**. Indeed doctors would be able to **save the positions their patient have to practice** and have a **feedback** on their performances. Because we wanted users to enjoy the game so they spend a significant time playing, we focused on the entertainment aspect (non repetitive, increasing difficulty, graphics etc). For our project, statistics will be visible on the screen at the end of the demo but the idea is that the doctor would be able to receive the data (via a web interface for instance).
 
+To be sure our game is safe (meaning it doesn't hurt people who already have back problems), we contacted **three differents physcial therapists** and asked them for advices. All of them though it was a good initiative and made observations, but infortunatelly none of them had the time to advice us for the postures. Indeed, in the middle of summer they were all too busy or on vacations before the end of the Summer School.
+
 ### Specs
 We used **Arduino boards** developed by the CRI called a Movuino. It has an **accelerometer** and an **altimeter**. The board is hung with a belt to mesure the **different positions of the center of gravity**.
 
@@ -78,6 +80,14 @@ The  sensor has to  be placed as vertical as possible on the back. A **smartphon
 </p>
 
 ### Exposition at the Cite des Sciences
+During the exposition, the public was able to test our prototype with the virtual reality application and the motionn gaming parts. We had a questionnaire to gather feedback for future improvements. People who visited our booth were from different ages and backgrounds so their observations were very diverse too and helped us a lot.
+
+A game designer was really intesrested by our  project because a physical therapist from the Cochin Hospital (*in Paris*) recently contacted him to create a medicinal game on back pains.
+
+### What's next ?
+Everything we've done is Open Source and we documented everything so the CRI's can use our project if there is an opportunity. For now, the project is paused because of the end of Summer School.
+We have the contact of the game desginer we met at the Cite des Science, so the project might be taken by other students from the CRI.
+
 <p align="center"><br>
 <img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/francoistaddei.png"><br>
 <i>Francois Taddei, the CRI's director testing our game</i>
