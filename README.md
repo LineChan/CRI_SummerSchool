@@ -75,7 +75,7 @@ We used **Arduino boards** developed by the CRI called a Movuino. It has an **ac
 The  sensor has to  be placed as vertical as possible on the back. A **smartphone** with the application is needed, and a **virtual reality headset**. Any headset will do the job, but a contextual key is necessary to move and interact with objects. For practical reasons we use Google Cardboards that cost around 10 euros for the cheapest ones. For the game engine we use **Unity** and **Autodesk Maya** for the graphics.
 
 <p align="center">
-<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/alternativecontrollers.png" alt="test"/>
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/videogamepenetration.png" alt="test"/>
 </p>
 
 # [Photos](#photos)
