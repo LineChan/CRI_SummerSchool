@@ -74,7 +74,7 @@ The  sensor has to  be placed as vertical as possible on the back. A **smartphon
 
 <p align="center"><br>
 <img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/alternativecontrollers.png"><br>
-<i> A Google Carboard, a Movuino and its protective case made with a 3D printer</i>
+<i> A Google Carboard, a Movuino and its protective case made with a 3D printer</i><br>
 </p>
 
 # [Photos](#photos)
