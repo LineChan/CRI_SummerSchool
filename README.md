@@ -63,8 +63,13 @@ Because of the technology we use (*mobile application, virtual reality headset*)
 
 - (2) : TED conference on gamification of physical therapy [TED.com](https://www.ted.com/talks/cosmin_mihaiu_physical_therapy_is_boring_play_a_game_instead#t-264985)
 
-## Our project : a medicinal game to prevent back pains
+## Our project
+We wanted to develop an educative game that could prevent people from back pains by encouraging them to **exercise regularly** or by **supervising their rehabilitation**. Indeed doctors would be able to **save the positions their patient have to practice** and have a **feedback** on their performances. Because we wanted users to enjoy the game so they spend a significant time playing, we focused on the entertainment aspect (non repetitive, increasing difficulty, graphics etc). For our project, statistics will be visible on the screen at the end of the demo but the idea is that the doctor would be able to receive the data (via a web interface for instance).
 
+### Specs
+We used **Arduino boards** developed by the CRI called a Movuino. It has an **accelerometer** and an **altimeter**. The board is hung with a belt to mesure the **different positions of the center of gravity**.
+
+The  sensor has to  be placed as vertical as possible on the back. A smartphone with the application is needed, and a virtual reality headset. Any headset will do the job, but a contextual key is necessary to move and interact with objects. For practical reasons we use Google Cardboards that cost around 10 euros for the cheapest ones. For the game engine we use Unity and Maya for graphics.
 
 
 # [Photos](#photos)
