@@ -84,14 +84,14 @@ During the exposition, the public was able to test our prototype with the virtua
 
 A game designer was really intesrested by our  project because a **physical therapist from the Cochin Hospital** (*in Paris*) recently contacted him to create a **medicinal game** on back pain prevention. We kept his contact in case we need to reach him again.
 
-### What's next ?
-Everything we've done is Open Source and we documented everything so the CRI's can use our project if there is an opportunity. For now, the project is paused because of the end of Summer School.
-We think that if a doctor is looking for a game similar to us, it means the project might interest other people and be continued by the next CRI's students.
-
 <p align="center"><br>
 <img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/francoistaddei.png"><br>
 <i>Francois Taddei, the CRI's director testing our game</i>
 </p>
+
+### What's next ?
+Everything we've done is Open Source and we documented everything so the CRI's can use our project if there is an opportunity. For now, the project is paused because of the end of Summer School.
+We think that if a doctor is looking for a game similar to us, it means the project might interest other people and be continued by the next CRI's students.
 
 # [Photos](#photos)
 
