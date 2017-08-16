@@ -75,7 +75,12 @@ The  sensor has to  be placed as vertical as possible on the back. A **smartphon
 
 ![Alternativecontrollers](/img/alternativecontrollers.png)
 <div style="text-align:center"><img src ="/img/alternativecontrollers.png" /></div>
+<p align="center">
+  <img />
+  </p>
 
+<div><img src="/img/alternativecontrollers.png" /></div>
 # [Photos](#photos)
+
 
 
