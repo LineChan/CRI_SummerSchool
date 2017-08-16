@@ -79,7 +79,7 @@ The  sensor has to  be placed as vertical as possible on the back. A **smartphon
 
 ### Exposition at the Cite des Sciences
 <p align="center"><br>
-<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/francoistaddei.png"><br>
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/francoistaddei1.png"><br>
 <i>Francois Taddei, the CRI's director testing our game</i>
 </p>
 
