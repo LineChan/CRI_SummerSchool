@@ -80,13 +80,13 @@ The  sensor has to  be placed as vertical as possible on the back. A **smartphon
 </p>
 
 ### Exposition at the Cite des Sciences
-During the exposition, the public was able to test our prototype with the virtual reality application and the motionn gaming parts. We had a questionnaire to gather feedback for future improvements. People who visited our booth were from different ages and backgrounds so their observations were very diverse too and helped us a lot.
+During the exposition, the public was able to test our prototype with the virtual reality application and the motion gaming parts. We had a questionnaire to gather feedback for future improvements. People who visited our booth were from different ages and backgrounds so their observations were very diverse too and helped us a lot.
 
-A game designer was really intesrested by our  project because a physical therapist from the Cochin Hospital (*in Paris*) recently contacted him to create a medicinal game on back pains.
+A game designer was really intesrested by our  project because a **physical therapist from the Cochin Hospital** (*in Paris*) recently contacted him to create a **medicinal game** on back pain prevention. We kept his contact in case we need to reach him again.
 
 ### What's next ?
 Everything we've done is Open Source and we documented everything so the CRI's can use our project if there is an opportunity. For now, the project is paused because of the end of Summer School.
-We have the contact of the game desginer we met at the Cite des Science, so the project might be taken by other students from the CRI.
+We think that if a doctor is looking for a game similar to us, it means the project might interest other people and be continued by the next CRI's students.
 
 <p align="center"><br>
 <img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/francoistaddei.png"><br>
