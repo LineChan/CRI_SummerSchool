@@ -52,7 +52,7 @@ Because we wanted to create **something affordable** (with an investement less t
 Because the major part of the population is concerned we think that a massive target can be reached. Indeed more than **70% of the people play video games**, gender parity is mostly respected and more than one in four players is on smartphone. Most of the people (more than 70%) play for fun and only 10% of them to learn something. (1) This reinforced the idea that we have to make **the educational part as discreet as possible** so we can target a larger public.
 
 <p align="center">
-![VideoGamePenetration](/img/videogamepenetration.png)
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/videogamepenetration.png" alt="test"/>
 
 *Video game penetration and age repartition (%)*
 
@@ -75,7 +75,7 @@ We used **Arduino boards** developed by the CRI called a Movuino. It has an **ac
 The  sensor has to  be placed as vertical as possible on the back. A **smartphone** with the application is needed, and a **virtual reality headset**. Any headset will do the job, but a contextual key is necessary to move and interact with objects. For practical reasons we use Google Cardboards that cost around 10 euros for the cheapest ones. For the game engine we use **Unity** and **Autodesk Maya** for the graphics.
 
 <p align="center">
-<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/videogamepenetration.png" alt="test"/>
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/alternativecontrollers.png" alt="test"/>
 </p>
 
 # [Photos](#photos)
