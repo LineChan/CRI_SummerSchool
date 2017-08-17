@@ -106,9 +106,9 @@ We think that if a doctor is looking for a game similar to us, it means the proj
 <p align="center"><br>
 <img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/francoispiuzzi.png"><br>
 <img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/frugalmedicalhardware.png"><br>
-<i>Frugal medical hardware with François Piuzzi </i><br>
+<i>Workshop on making frugal medical hardwares with François Piuzzi </i><br>
 <img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/curtwhite.png"><br>
-<i> Hacking wearable devices with Curt White </i>
+<i> Hacking wearable devices during a workshop with Curt White </i>
 <img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/fablab.png"><br>
 <i> Messing around in the MakerLab </i>
 </p>
