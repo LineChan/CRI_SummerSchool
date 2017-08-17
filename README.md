@@ -102,5 +102,14 @@ We think that if a doctor is looking for a game similar to us, it means the proj
 
 # [Photos](#photos)
 
-
-
+![](/img/.png)
+<p align="center"><br>
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/francoispiuzzu.png"><br>
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/frugalmedicaldevice.png"><br>
+<i>Frugal medical hardware with François Piuzzi </i>
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/francoispiuzzu.png"><br>
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/curtwhite.png"><br>
+<i> Hacking wearable devices with Curt White </i>
+<img src="https://github.com/LineChan/CRI_SummerSchool/blob/master/img/fablab.png"><br>
+<i> Messing around in the MakerLab </i>
+</p>
